@@ -95,6 +95,8 @@
           if (dealt < 200) {
             this.touch.percent = 2 * (1 + (touch.pageY - this.touch.startY) / 200)
           }
+        }else {
+          this.$refs.loading.style.height = 0
         }
       },
       mainTouchEnd(e) {
