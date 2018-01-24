@@ -61,8 +61,9 @@
         const percent = Math.max(0.2, 1 - leaveTop / 70)
         this.$refs.header.style.background = `rgba(217,63,48,${percent})`
         const newHeight = Math.max(50, (percent * 70))
-        console.log(newHeight)
-        this.$refs.header.style.height = newHeight + 'px'
+        if (newHeight > 50) {
+          this.$refs.header.style.height = newHeight + 'px'
+        }
       },
       getShopList() {
         this.$http({
