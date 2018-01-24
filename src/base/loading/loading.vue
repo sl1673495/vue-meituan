@@ -1,5 +1,5 @@
 <template>
-  <div class="loading">
+  <div class="loading-wrapper">
     <img width="24" height="24" src="./loading.gif">
     <p class="desc">{{title}}</p>
   </div>
@@ -17,11 +17,13 @@
 <style scoped lang="stylus" rel="stylesheet/stylus">
   @import "../../common/stylus/variable"
 
-  .loading
+  .loading-wrapper
     width: 100%
-    text-align: center
+    height: 100%
+    display flex
+    align-items center
+    justify-content center
     .desc
       line-height: 20px
       font-size: $font-size-small
-      color: $color-text-l
 </style>

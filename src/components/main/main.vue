@@ -48,12 +48,14 @@
         const currentHeight = window.innerHeight
         const leaveTop = document.documentElement.scrollTop || document.body.scrollTop
         if (currentHeight + leaveTop === this.touch.bodyHeight) {
-          this.$http({
-            method: 'get',
-            url: '/static/json/shops2.json'
-          }).then((res) => {
-            this.shopList = this.shopList.concat(res.data.poilist)
-          })
+          setTimeout(() => {
+            this.$http({
+              method: 'get',
+              url: '/static/json/shops2.json'
+            }).then((res) => {
+              this.shopList = this.shopList.concat(res.data.poilist)
+            })
+          },1000)
         }
         // 下拉透明
         const percent = Math.max(0.2, 1 - leaveTop / 70)
@@ -193,7 +195,6 @@
       font-weight 700
       text-align center
       padding 10px 0
-
   .load-more
     height: 100px
 </style>
