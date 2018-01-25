@@ -91,7 +91,11 @@
         this.touch.contentDom.style[transition] = ``
       },
       shopTouchMove(e) {
-        e.stopPropagation()
+        const leaveTop = document.documentElement.scrollTop || document.body.scrollTop
+        if (leaveTop !== 0) {
+          // 阻止shoplist的move事件冒泡到main组件的move事件
+          e.stopPropagation()
+        }
         const touch = e.touches[0]
         const dealtX = Math.abs(this.touch.startX - touch.clientX)
         const dealtY = Math.abs(this.touch.startClientY - touch.clientY)
@@ -100,9 +104,6 @@
           return
         }else {
           e.preventDefault()
-        }
-        if (touch.clientX > this.touch.startX) {
-
         }
         const diffX = Math.min(MAX_LENGTH ,this.touch.startX - touch.clientX)
         this.touch.delDom.style.width = `${diffX}px`
