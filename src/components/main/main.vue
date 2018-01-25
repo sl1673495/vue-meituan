@@ -20,7 +20,7 @@
       <h1 class="title">
         附近商家
       </h1>
-      <shop-list :data="shopList"></shop-list>
+      <shop-list :data="shopList" @del="del"></shop-list>
     </div>
     <div class="load-more">
       <loading></loading>
@@ -34,7 +34,13 @@
   import ShopList from '@/base/shop-list/shop-list'
   import Split from '@/base/split/split'
   import Loading from '@/base/loading/loading'
-
+  import {prefixStyle} from '@/common/js/dom'
+  const MAX_PULL_LENGTH = 200
+  const LENGTH_TO_REFRESH = 100
+  const MIN_HEADER_HEIGHT = 50
+  const ORIGIN_HEDEAR_HEIGHT = 70
+  const transform = prefixStyle('transform')
+  const transition = prefixStyle('transition')
   export default {
     created() {
       this.getShopList()
@@ -58,10 +64,9 @@
           },1000)
         }
         // 下拉透明
-        const percent = Math.max(0.2, 1 - leaveTop / 70)
+        const percent = Math.max(0.2, 1 - leaveTop / ORIGIN_HEDEAR_HEIGHT)
         this.$refs.header.style.background = `rgba(217,63,48,${percent})`
-        const newHeight = Math.max(50, (percent * 70))
-        console.log(newHeight)
+        const newHeight = Math.max(MIN_HEADER_HEIGHT, (percent * ORIGIN_HEDEAR_HEIGHT))
         this.$refs.header.style.height = newHeight + 'px'
       },
       getShopList() {
@@ -73,27 +78,28 @@
         })
       },
       mainTouchStart(e) {
-        this.$refs.loading.style.transition = ``
+        this.$refs.loading.style[transition] = ``
+        const touch = e.touches[0]
         this.touch = {}
         this.touch.bodyHeight = document.getElementsByTagName('body')[0].clientHeight
-        const touch = e.touches[0]
         this.touch.startY = touch.pageY
+        this.touch.startX = touch.pageX
       },
       mainTouchMove(e) {
         const leaveTop = document.documentElement.scrollTop || document.body.scrollTop
-        if (leaveTop !== 0) {
-          return
-        }
         const touch = e.touches[0]
         const height = window.innerHeight
+        if (leaveTop === 0 && touch.pageY > this.touch.startY) {
+          event.preventDefault()
+        }
         // 上拉刷新
         if (touch.pageY > this.touch.startY) {
-          const dealt = Math.min(touch.pageY - this.touch.startY, 200)
+          const dealt = Math.min(touch.pageY - this.touch.startY, MAX_PULL_LENGTH)
           this.$refs.loading.style.height = `${dealt}px`
           this.$refs.loadingImg.style.height = `${dealt / 2}px`
           this.$refs.loadingImg.style.width = `${dealt / 2}px`
-          if (dealt < 200) {
-            this.touch.percent = 2 * (1 + (touch.pageY - this.touch.startY) / 200)
+          if (dealt < MAX_PULL_LENGTH) {
+            this.touch.percent = 2 * (1 + (touch.pageY - this.touch.startY) / MAX_PULL_LENGTH)
           }
         }else {
           this.$refs.loading.style.height = 0
@@ -101,9 +107,9 @@
       },
       mainTouchEnd(e) {
         const imageHeight = this.$refs.loading.clientHeight
-        this.$refs.loading.style.transition = `all 0.5s`
+        this.$refs.loading.style[transition] = `all 0.5s`
         // 拖动超过一半, 刷新
-        if (imageHeight > 100) {
+        if (imageHeight > LENGTH_TO_REFRESH) {
           setTimeout(() => {
             this.$refs.loading.style.height = 0
           }, 1000)
@@ -111,8 +117,12 @@
           this.$refs.loading.style.height = 0
         }
         this.touch.init = false
+      },
+      del(index){
+        this.shopList.splice(index,1)
       }
     },
+
     data() {
       return {
         listData: [
@@ -177,7 +187,7 @@
       transform: translate(-50%, -50%)
 
   .header
-    position fixed
+    position relative
     height 70px
     width 100%
     background $color-background
@@ -189,7 +199,6 @@
       transform: translate(-50%, -50%)
 
   .icon-list-wrapper
-    margin-top 70px
     padding 5px 0
 
   .shop-list
