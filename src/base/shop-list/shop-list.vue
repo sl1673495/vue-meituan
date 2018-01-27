@@ -160,13 +160,14 @@
 </script>
 
 <style lang="stylus" scoped>
-  @import "../../common/stylus/variable.styl"
+  @import "~common/stylus/variable.styl"
+  @import "~common/stylus/mixin.styl"
 
   .item
     position relative
     display flex
     padding 20px 10px
-    border-bottom 1px solid #efefef
+    border-1px(#efefef)
     .img
       flex 0 0 7rem
     .content
