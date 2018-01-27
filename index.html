@@ -5,6 +5,15 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>meituan</title>
+    <script>
+      !function () {
+        var oHtml = document.getElementsByTagName("html")[0]
+        var width = oHtml.clientWidth
+        if (width < 1000){
+          oHtml.style.fontSize = 11 * (width / 320) + "px";
+        }
+      }()
+    </script>
   </head>
   <body>
     <div id="app"></div>

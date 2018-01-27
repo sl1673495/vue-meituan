@@ -160,13 +160,15 @@
 </script>
 
 <style lang="stylus" scoped>
+  @import "../../common/stylus/variable.styl"
+
   .item
     position relative
     display flex
     padding 20px 10px
     border-bottom 1px solid #efefef
     .img
-      flex 0 0 80px
+      flex 0 0 7rem
     .content
       display flex
       position relative
@@ -175,29 +177,27 @@
       padding 0 10px
       flex 1
       .name
-        font-size 14px
+        font-size $font-size-medium
         white-space nowrap
-        overflow hidden
-        text-overflow ellipsis
         padding-bottom 5px
       .middle
         display flex
-        font-size 11px
+        font-size $font-size-small
         .star
           margin-right 5px
       .bottom
-        font-size 11px
+        font-size $font-size-small
       .distance
         position absolute
         right 0
         white-space nowrap
-        font-size 11px
+        font-size $font-size-small
     .del-item
       position absolute
       display flex
       justify-content center
       align-items center
-      font-size 15px
+      font-size $font-size-medium
       right 0
       bottom 0
       top 0
