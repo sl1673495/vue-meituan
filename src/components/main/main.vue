@@ -20,7 +20,7 @@
       <h1 class="title">
         附近商家
       </h1>
-      <shop-list :data="shopList" @del="del"></shop-list>
+      <shop-list @select="selectShop" :data="shopList" @del="del"></shop-list>
     </div>
     <div class="load-more">
       <loading></loading>
@@ -35,8 +35,10 @@
   import Split from '@/base/split/split'
   import Loading from '@/base/loading/loading'
   import {prefixStyle} from '@/common/js/dom'
-  const MAX_PULL_LENGTH = 200
-  const LENGTH_TO_REFRESH = 100
+  import {mapMutations} from 'vuex'
+
+  const MAX_PULL_LENGTH = 100
+  const LENGTH_TO_REFRESH = 50
   const MIN_HEADER_HEIGHT = 50
   const ORIGIN_HEDEAR_HEIGHT = 70
   const transform = prefixStyle('transform')
@@ -49,11 +51,15 @@
       window.addEventListener('scroll', this.scroll)
     },
     methods: {
-      scroll() {
+      scroll(e) {
         // 下拉加载更多
         const currentHeight = window.innerHeight
         const leaveTop = document.documentElement.scrollTop || document.body.scrollTop
-        if (currentHeight + leaveTop === this.touch.bodyHeight) {
+        if (leaveTop === 0) {
+          e.preventDefault()
+        }
+        const bodyHeight = document.getElementsByTagName('body')[0].clientHeight
+        if (currentHeight + leaveTop === bodyHeight) {
           setTimeout(() => {
             this.$http({
               method: 'get',
@@ -61,13 +67,11 @@
             }).then((res) => {
               this.shopList = this.shopList.concat(res.data.poilist)
             })
-          },1000)
+          }, 1000)
         }
         // 下拉透明
         const percent = Math.max(0.2, 1 - leaveTop / ORIGIN_HEDEAR_HEIGHT)
         this.$refs.header.style.background = `rgba(217,63,48,${percent})`
-        const newHeight = Math.max(MIN_HEADER_HEIGHT, (percent * ORIGIN_HEDEAR_HEIGHT))
-        this.$refs.header.style.height = newHeight + 'px'
       },
       getShopList() {
         this.$http({
@@ -79,18 +83,29 @@
       },
       mainTouchStart(e) {
         this.$refs.loading.style[transition] = ``
-        const touch = e.touches[0]
-        this.touch = {}
-        this.touch.bodyHeight = document.getElementsByTagName('body')[0].clientHeight
-        this.touch.startY = touch.pageY
-        this.touch.startX = touch.pageX
-      },
-      mainTouchMove(e) {
         const leaveTop = document.documentElement.scrollTop || document.body.scrollTop
         const touch = e.touches[0]
-        const height = window.innerHeight
-        if (leaveTop === 0 && touch.pageY > this.touch.startY) {
-          event.preventDefault()
+        this.touch = {}
+        if (leaveTop <= 0) {
+          this.touch.initRefreshing = true
+        }
+        this.touch.startY = touch.pageY
+        this.touch.startX = touch.pageX
+        this.touch.startClientY = touch.clientY
+      },
+      mainTouchMove(e) {
+        if (this.isRefreshing) {
+          return
+        }
+        if (!this.touch.initRefreshing) {
+          return
+        }
+        const touch = e.touches[0]
+        const dealtX = Math.abs(this.touch.startX - touch.clientX)
+        const dealtY = Math.abs(this.touch.startClientY - touch.clientY)
+        // x方向偏移大于y方向 就直接返回
+        if (dealtX > dealtY) {
+          return
         }
         // 上拉刷新
         if (touch.pageY > this.touch.startY) {
@@ -101,7 +116,7 @@
           if (dealt < MAX_PULL_LENGTH) {
             this.touch.percent = 2 * (1 + (touch.pageY - this.touch.startY) / MAX_PULL_LENGTH)
           }
-        }else {
+        } else {
           this.$refs.loading.style.height = 0
         }
       },
@@ -109,18 +124,30 @@
         const imageHeight = this.$refs.loading.clientHeight
         this.$refs.loading.style[transition] = `all 0.5s`
         // 拖动超过一半, 刷新
+        this.isRefreshing = true
         if (imageHeight > LENGTH_TO_REFRESH) {
+          this.shopList = []
           setTimeout(() => {
+            this.getShopList()
             this.$refs.loading.style.height = 0
+            this.isRefreshing = false
           }, 1000)
         } else {
           this.$refs.loading.style.height = 0
+          this.isRefreshing = false
         }
-        this.touch.init = false
       },
-      del(index){
-        this.shopList.splice(index,1)
-      }
+      selectShop(shop) {
+        this.setShop(shop)
+        this.$router.push('/detail/88')
+      },
+      del(index) {
+        this.shopList.splice(index, 1)
+      },
+      ...mapMutations({
+        setShop: 'SET_SHOP'
+      })
+
     },
 
     data() {
@@ -206,6 +233,7 @@
       font-weight 700
       text-align center
       padding 10px 0
+
   .load-more
     height: 100px
 </style>

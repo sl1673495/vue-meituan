@@ -3,11 +3,15 @@
     <li :ref="'item'+ index"
         class="item"
         v-for="(item,index) in data"
+        @click="selectItem(item)"
         @touchstart="shopTouchStart(index,$event)"
         @touchmove="shopTouchMove"
         @touchend="shopTouchEnd">
       <div class="img" :ref="'img'+ index">
         <img width="100%" height="100%" v-lazy="item.pic_url">
+        <div class="type-img" v-show="item.poi_type_icon">
+          <img :src="item.poi_type_icon" width="100%" height="100%">
+        </div>
       </div>
       <div class="content" :ref="'content'+ index">
         <h1 class="name">
@@ -20,15 +24,27 @@
           <div class="number">
             月售{{_computedNum(item.month_sale_num)}}
           </div>
+          <div class="distance">
+            {{item.mt_delivery_time}}
+            <span class="shop-line">|</span>
+            {{item.distance}}
+          </div>
         </div>
         <div class="bottom">
-          {{item.min_price_tip}} | {{item.shipping_fee_tip}}
+          {{item.min_price_tip}}
+          <span class="shop-line">|</span>
+          {{item.shipping_fee_tip}}
+          <span class="shop-line">|</span>
+          {{item.average_price_tip}}
         </div>
-        <div class="distance">
-          {{item.mt_delivery_time}} | {{item.distance}}
-        </div>
+        <ul class="discounts">
+          <li class="dis-item" v-for="discount in item.discounts2">
+            <img :src="discount.icon_url" width="15px" height="15px">
+            {{discount.info}}
+          </li>
+        </ul>
       </div>
-      <div class="del-item" :ref="'del'+ index" @click="del(index)">
+      <div class="del-item" :ref="'del'+ index" @click.stop="del(index)">
         删除
       </div>
     </li>
@@ -53,6 +69,9 @@
 
     },
     methods: {
+      selectItem(item) {
+        this.$emit('select',item)
+      },
       shopTouchStart(index, e) {
         const delRef = 'del' + index
         const contentRef = 'content' + index
@@ -91,11 +110,6 @@
         this.touch.contentDom.style[transition] = ``
       },
       shopTouchMove(e) {
-        const leaveTop = document.documentElement.scrollTop || document.body.scrollTop
-        if (leaveTop !== 0) {
-          // 阻止shoplist的move事件冒泡到main组件的move事件
-          e.stopPropagation()
-        }
         const touch = e.touches[0]
         const dealtX = Math.abs(this.touch.startX - touch.clientX)
         const dealtY = Math.abs(this.touch.startClientY - touch.clientY)
@@ -163,48 +177,64 @@
   @import "~common/stylus/variable.styl"
   @import "~common/stylus/mixin.styl"
 
-  .item
-    position relative
-    display flex
-    padding 20px 10px
-    border-1px(#efefef)
-    .img
-      flex 0 0 7rem
-    .content
-      display flex
+  .shop-list
+    .item
       position relative
-      flex-direction column
-      justify-content space-around
-      padding 0 10px
-      flex 1
-      .name
-        font-size $font-size-medium
-        white-space nowrap
-        padding-bottom 5px
-      .middle
-        display flex
-        font-size $font-size-small
-        .star
-          margin-right 5px
-      .bottom
-        font-size $font-size-small
-      .distance
-        position absolute
-        right 0
-        white-space nowrap
-        font-size $font-size-small
-    .del-item
-      position absolute
       display flex
-      justify-content center
-      align-items center
-      font-size $font-size-medium
-      right 0
-      bottom 0
-      top 0
-      background #d43c33
-      width 0
-      overflow: hidden
-      color white
-      white-space nowrap
+      padding 20px 10px
+      border-1px(#efefef)
+      .img
+        position relative
+        flex 0 0 7rem
+        height 5rem
+        .type-img
+          position absolute
+          right 0
+          top 0
+          width 2rem
+          height 1.1rem
+      .content
+        display flex
+        position relative
+        flex-direction column
+        padding 0 10px
+        flex 1
+        .name
+          font-size $font-size-medium
+          white-space nowrap
+          padding-bottom 0.5rem
+        .middle
+          display flex
+          font-size $font-size-small
+          padding-bottom 0.5rem
+          .distance
+            position absolute
+            right 0
+            white-space nowrap
+            font-size $font-size-small
+          .star
+            margin-right 5px
+        .bottom
+          padding-bottom 1rem
+          font-size $font-size-small
+        .discounts
+          .dis-item
+            font-size $font-size-small
+            padding 0.3rem 0
+            img
+              vertical-align middle
+      .del-item
+        position absolute
+        display flex
+        justify-content center
+        align-items center
+        font-size $font-size-medium
+        right 0
+        bottom 0
+        top 0
+        background #d43c33
+        width 0
+        overflow: hidden
+        color white
+        white-space nowrap
 </style>
