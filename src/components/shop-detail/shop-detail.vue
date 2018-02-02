@@ -30,6 +30,28 @@
           <i class="icon-back"></i>
         </div>
       </div>
+      <div class="notify">
+        <img src="http://p0.meituan.net/xianfu/c2c0f31d0ebf0f60af115d058169c492992.png" width="15px" height="15px">
+        有机会领取商家代金券
+      </div>
+      <div class="tab-bar">
+        <router-link :to="{name:'foods'}" class="tab-item">
+          <span class="text">
+            点菜
+          </span>
+        </router-link>
+        <a class="tab-item">
+          <span class="text">
+            评价
+          </span>
+        </a>
+        <a class="tab-item">
+          <span class="text">
+            商家
+          </span>
+        </a>
+      </div>
+      <router-view/>
     </div>
   </transition>
 </template>
@@ -62,19 +84,15 @@
     transform: translate3d(100%, 0, 0)
 
   .shop-detail
-    position fixed
-    bottom 0
-    right 0
-    top 0
-    left: 0
     height 100%
     background #fff
+    overflow-y hidden
     .header
       position relative
       width 100%
       height 10rem
       color: #fff;
-      background: rgba(7,17,27,0.5);
+      background: rgba(7, 17, 27, 0.5);
       .background
         position: absolute
         top: 0
@@ -113,4 +131,27 @@
         top 0.5rem
         .icon-back
           font-size 1.4rem
+    .notify
+      background #FFF8E8
+      height 2rem
+      line-height 2rem
+      padding 0 .5rem
+      font-size $font-size-small
+      img
+        vertical-align middle
+    .tab-bar
+      display flex
+      height 2.5rem
+      line-height 2.5rem
+      border-1px($color-split-grey)
+      .tab-item
+        display block
+        text-align center
+        flex 1
+        &.router-link-active .text
+          border-bottom: 4px solid #FFD161;
+        .text
+          display inline-block
+          height 2.2rem
+          padding 0 .7rem
 </style>

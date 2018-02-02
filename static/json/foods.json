@@ -1,0 +1,4404 @@
+{
+  "data": {
+    "container_template": {
+      "code": 0,
+      "is_page": false
+    },
+    "latest_bought": {
+      "tag": "op0010",
+      "tag_name": "买过",
+      "tag_icon": "http://p1.meituan.net/aichequan/6544f95cd7826c383d54fa5c881919e61386.png",
+      "tag_sequence": 0,
+      "orderlist_his": []
+    },
+    "container_operation_source": {
+      "tag": "op0020",
+      "tag_name": "专场",
+      "tag_icon": "http://p1.meituan.net/aichequan/aa78dd5220590e0f2f44c8c9087de9171414.png",
+      "tag_sequence": 1,
+      "operation_source_list": [],
+      "poi_coupon_list": [{
+        "credit": 9.0,
+        "title": "商家代金券",
+        "get_button_content": "去领取",
+        "exclusive_share_description": "共2张，限本店新客",
+        "status": 0,
+        "scheme": "meituanwaimai://waimai.meituan.com/browser?inner_url=http://i.waimai.meituan.com/activity/grabPoiCoupon?user_id=308344176&user_phone=18061392796&poi_id=437709701613856&new_custom=true",
+        "pic_url": ""
+      }]
+    },
+    "food_spu_tags": [{
+      "tag": "100",
+      "name": "热销",
+      "icon": "http://p1.meituan.net/aichequan/87f966955f693102d67daf2ec44b58411361.png",
+      "big_pic_url": "",
+      "current_page": 0,
+      "has_next_page": false,
+      "product_count": 0,
+      "type": 3,
+      "selected": 0,
+      "tag_description": "",
+      "description": "",
+      "sequence": 0,
+      "activity_tag": "",
+      "spus": [{
+        "id": 226369746,
+        "name": "酱肉包",
+        "min_price": 1.5,
+        "praise_num": 51,
+        "praise_content": "赞51",
+        "tread_num": 7,
+        "praise_num_new": 51,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p0.meituan.net/xianfu/c45d76c7cdaa0ef1b29caa16452da1af90651.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 246049626,
+          "spec": "",
+          "description": "",
+          "picture": "http://p0.meituan.net/xianfu/c45d76c7cdaa0ef1b29caa16452da1af90651.jpg",
+          "price": 1.5,
+          "origin_price": 1.5,
+          "box_num": 1.0,
+          "box_price": 0.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 3,
+          "real_stock": 3,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 226381006,
+        "name": "茶叶蛋",
+        "min_price": 2.5,
+        "praise_num": 61,
+        "praise_content": "赞61",
+        "tread_num": 3,
+        "praise_num_new": 61,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p0.meituan.net/xianfu/af5dac3c0c551005447041079f891625272384.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 246062282,
+          "spec": "",
+          "description": "",
+          "picture": "http://p0.meituan.net/xianfu/af5dac3c0c551005447041079f891625272384.jpg",
+          "price": 2.5,
+          "origin_price": 2.5,
+          "box_num": 1.0,
+          "box_price": 0.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 226376953,
+        "name": "甜豆浆",
+        "min_price": 2.0,
+        "praise_num": 57,
+        "praise_content": "赞57",
+        "tread_num": 3,
+        "praise_num_new": 57,
+        "unit": "份",
+        "description": "是全豆豆浆 会有一点渣 是正常现象 请大家放心饮用",
+        "picture": "http://p0.meituan.net/xianfu/7f2cc137bcb1693a74e59d553117e74f83640.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 246058337,
+          "spec": "",
+          "description": "是全豆豆浆 会有一点渣 是正常现象 请大家放心饮用",
+          "picture": "http://p0.meituan.net/xianfu/7f2cc137bcb1693a74e59d553117e74f83640.jpg",
+          "price": 2.0,
+          "origin_price": 2.0,
+          "box_num": 1.0,
+          "box_price": 0.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 521741038,
+        "name": "锅贴煎饺",
+        "min_price": 5.4,
+        "praise_num": 56,
+        "praise_content": "赞56",
+        "tread_num": 7,
+        "praise_num_new": 56,
+        "unit": "份",
+        "description": "一份4个 玉米猪肉陷的",
+        "picture": "http://p0.meituan.net/wmproduct/0d1467a24e9147026b5c97a68aab5515127606.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 570146417,
+          "spec": "",
+          "description": "一份4个 玉米猪肉陷的",
+          "picture": "http://p0.meituan.net/wmproduct/0d1467a24e9147026b5c97a68aab5515127606.jpg",
+          "price": 5.4,
+          "origin_price": 6.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": -1,
+          "restrict": 1,
+          "promotion_info": "9折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "9折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "9折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "9折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 226370761,
+        "name": "鲜肉包",
+        "min_price": 1.5,
+        "praise_num": 28,
+        "praise_content": "赞28",
+        "tread_num": 3,
+        "praise_num_new": 28,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p0.meituan.net/xianfu/88c00d2d9538fda00bebfe220bdd5078142976.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 246049694,
+          "spec": "",
+          "description": "",
+          "picture": "http://p0.meituan.net/xianfu/88c00d2d9538fda00bebfe220bdd5078142976.jpg",
+          "price": 1.5,
+          "origin_price": 1.5,
+          "box_num": 1.0,
+          "box_price": 0.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 2,
+          "real_stock": 2,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 623173903,
+        "name": "酱香饼",
+        "min_price": 4.8,
+        "praise_num": 44,
+        "praise_content": "赞44",
+        "tread_num": 3,
+        "praise_num_new": 44,
+        "unit": "份",
+        "description": "新品欢迎品尝",
+        "picture": "http://p1.meituan.net/wmproduct/ccef0bc36a00214bdad0ac9949d6f1cf736703.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 677602681,
+          "spec": "",
+          "description": "新品欢迎品尝",
+          "picture": "http://p1.meituan.net/wmproduct/ccef0bc36a00214bdad0ac9949d6f1cf736703.jpg",
+          "price": 4.8,
+          "origin_price": 6.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": -1,
+          "restrict": 1,
+          "promotion_info": "8折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "8折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "8折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "8折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225543181,
+        "name": "油条",
+        "min_price": 2.7,
+        "praise_num": 42,
+        "praise_content": "赞42",
+        "tread_num": 2,
+        "praise_num_new": 42,
+        "unit": "份",
+        "description": "外卖的油条不脆 介意的亲忽拍哦 是一份  用盒子装的",
+        "picture": "http://p1.meituan.net/xianfu/8f56ef6a75637512ca0de269898f2ce4146059.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245123725,
+          "spec": "",
+          "description": "外卖的油条不脆 介意的亲忽拍哦 是一份  用盒子装的",
+          "picture": "http://p1.meituan.net/xianfu/8f56ef6a75637512ca0de269898f2ce4146059.jpg",
+          "price": 2.7,
+          "origin_price": 3.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": -1,
+          "restrict": 1,
+          "promotion_info": "9折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "9折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "9折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "9折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [{
+          "picture_url": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+          "width": 60,
+          "height": 30
+        }],
+        "log_field": {
+          "product_label_type_list": [3],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225576034,
+        "name": "蔬菜粥",
+        "min_price": 1.88,
+        "praise_num": 32,
+        "praise_content": "赞32",
+        "tread_num": 0,
+        "praise_num_new": 32,
+        "unit": "份",
+        "description": "需要泡菜备注一下",
+        "picture": "http://p0.meituan.net/xianfu/35d3837ab286e845678dc2255f5f51c0223232.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245165065,
+          "spec": "",
+          "description": "需要泡菜备注一下",
+          "picture": "http://p0.meituan.net/xianfu/35d3837ab286e845678dc2255f5f51c0223232.jpg",
+          "price": 1.88,
+          "origin_price": 3.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": -1,
+          "restrict": 1,
+          "promotion_info": "6.27折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "6.27折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509095",
+        "sequence": 0,
+        "promotion_info": "6.27折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "6.27折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225572955,
+        "name": "皮蛋瘦肉粥",
+        "min_price": 7.2,
+        "praise_num": 43,
+        "praise_content": "赞43",
+        "tread_num": 0,
+        "praise_num_new": 43,
+        "unit": "份",
+        "description": "需要泡菜备注一下",
+        "picture": "http://p0.meituan.net/xianfu/8cb7b4608c151c0076cbfc562bd7c27a200704.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245162457,
+          "spec": "",
+          "description": "需要泡菜备注一下",
+          "picture": "http://p0.meituan.net/xianfu/8cb7b4608c151c0076cbfc562bd7c27a200704.jpg",
+          "price": 7.2,
+          "origin_price": 8.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": -1,
+          "restrict": 1,
+          "promotion_info": "9折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "9折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509095",
+        "sequence": 0,
+        "promotion_info": "9折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "9折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [{
+          "picture_url": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+          "width": 60,
+          "height": 30
+        }],
+        "log_field": {
+          "product_label_type_list": [3],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 626671564,
+        "name": "葱香鸡蛋饼",
+        "min_price": 4.8,
+        "praise_num": 32,
+        "praise_content": "赞32",
+        "tread_num": 5,
+        "praise_num_new": 32,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p1.meituan.net/wmproduct/77ef20c6d407d4d899f313422917a3d9268131.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 681261374,
+          "spec": "",
+          "description": "",
+          "picture": "http://p1.meituan.net/wmproduct/77ef20c6d407d4d899f313422917a3d9268131.jpg",
+          "price": 4.8,
+          "origin_price": 6.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": -1,
+          "restrict": 1,
+          "promotion_info": "8折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "8折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "8折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "8折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }],
+      "tags": [],
+      "buzType": 0,
+      "activity_info": {
+        "activity_text": "",
+        "scheme_url": "",
+        "icon_url": ""
+      }
+    }, {
+      "tag": "act17",
+      "name": "折扣",
+      "icon": "http://p0.meituan.net/aichequan/45662b4d1968fd75bff38de23f6d62641421.png",
+      "big_pic_url": "",
+      "current_page": 0,
+      "has_next_page": false,
+      "product_count": 11,
+      "type": 2,
+      "selected": 0,
+      "tag_description": "折扣商品",
+      "description": "超过限购份数可原价购买",
+      "sequence": 1,
+      "activity_tag": "discount",
+      "spus": [{
+        "id": 390570165,
+        "name": "麻圆",
+        "min_price": 2.4,
+        "praise_num": 19,
+        "praise_content": "赞19",
+        "tread_num": 1,
+        "praise_num_new": 19,
+        "unit": "份",
+        "description": "外卖的麻圆是常温的  不是很脆 介意的亲忽拍哦",
+        "picture": "http://p0.meituan.net/wmproduct/969787c6193b2d9994412fc7d2c010b04477563.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 426892780,
+          "spec": "",
+          "description": "外卖的麻圆是常温的  不是很脆 介意的亲忽拍哦",
+          "picture": "http://p0.meituan.net/wmproduct/969787c6193b2d9994412fc7d2c010b04477563.jpg",
+          "price": 2.4,
+          "origin_price": 3.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 1,
+          "real_stock": 1,
+          "activity_stock": 1,
+          "restrict": 1,
+          "promotion_info": "8折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "8折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "8折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "8折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": "act_17_17"
+      }, {
+        "id": 225543181,
+        "name": "油条",
+        "min_price": 2.7,
+        "praise_num": 42,
+        "praise_content": "赞42",
+        "tread_num": 2,
+        "praise_num_new": 42,
+        "unit": "份",
+        "description": "外卖的油条不脆 介意的亲忽拍哦 是一份  用盒子装的",
+        "picture": "http://p1.meituan.net/xianfu/8f56ef6a75637512ca0de269898f2ce4146059.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245123725,
+          "spec": "",
+          "description": "外卖的油条不脆 介意的亲忽拍哦 是一份  用盒子装的",
+          "picture": "http://p1.meituan.net/xianfu/8f56ef6a75637512ca0de269898f2ce4146059.jpg",
+          "price": 2.7,
+          "origin_price": 3.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": -1,
+          "restrict": 1,
+          "promotion_info": "9折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "9折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "9折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "9折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [{
+          "picture_url": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+          "width": 60,
+          "height": 30
+        }],
+        "log_field": {
+          "product_label_type_list": [3],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": "act_17_17"
+      }, {
+        "id": 662523478,
+        "name": "套餐（皮蛋瘦肉粥1+葱香鸡蛋饼1+凉拌海带丝1+开胃菜1）",
+        "min_price": 14.9,
+        "praise_num": 3,
+        "praise_content": "赞3",
+        "tread_num": 0,
+        "praise_num_new": 3,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p0.meituan.net/wmproduct/6051bef1ade78bacb15a6d6644066159283282.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 718613867,
+          "spec": "",
+          "description": "",
+          "picture": "http://p0.meituan.net/wmproduct/6051bef1ade78bacb15a6d6644066159283282.jpg",
+          "price": 14.9,
+          "origin_price": 20.0,
+          "box_num": 1.0,
+          "box_price": 2.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 15,
+          "real_stock": -1,
+          "activity_stock": 15,
+          "restrict": 1,
+          "promotion_info": "7.45折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "7.45折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29476406",
+        "sequence": 0,
+        "promotion_info": "7.45折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "7.45折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": "act_17_17"
+      }, {
+        "id": 626671564,
+        "name": "葱香鸡蛋饼",
+        "min_price": 4.8,
+        "praise_num": 32,
+        "praise_content": "赞32",
+        "tread_num": 5,
+        "praise_num_new": 32,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p1.meituan.net/wmproduct/77ef20c6d407d4d899f313422917a3d9268131.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 681261374,
+          "spec": "",
+          "description": "",
+          "picture": "http://p1.meituan.net/wmproduct/77ef20c6d407d4d899f313422917a3d9268131.jpg",
+          "price": 4.8,
+          "origin_price": 6.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": -1,
+          "restrict": 1,
+          "promotion_info": "8折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "8折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "8折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "8折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": "act_17_17"
+      }, {
+        "id": 623173903,
+        "name": "酱香饼",
+        "min_price": 4.8,
+        "praise_num": 44,
+        "praise_content": "赞44",
+        "tread_num": 3,
+        "praise_num_new": 44,
+        "unit": "份",
+        "description": "新品欢迎品尝",
+        "picture": "http://p1.meituan.net/wmproduct/ccef0bc36a00214bdad0ac9949d6f1cf736703.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 677602681,
+          "spec": "",
+          "description": "新品欢迎品尝",
+          "picture": "http://p1.meituan.net/wmproduct/ccef0bc36a00214bdad0ac9949d6f1cf736703.jpg",
+          "price": 4.8,
+          "origin_price": 6.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": -1,
+          "restrict": 1,
+          "promotion_info": "8折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "8折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "8折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "8折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": "act_17_17"
+      }, {
+        "id": 564256298,
+        "name": "凉拌海带丝",
+        "min_price": 4.2,
+        "praise_num": 9,
+        "praise_content": "赞9",
+        "tread_num": 0,
+        "praise_num_new": 9,
+        "unit": "份",
+        "description": "酸辣爽口  有不吃辣 醋 姜蒜的亲 不要拍哦",
+        "picture": "http://p0.meituan.net/wmproduct/305ced829b769b5bdec59038e9de55d66719300.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 615520521,
+          "spec": "",
+          "description": "酸辣爽口  有不吃辣 醋 姜蒜的亲 不要拍哦",
+          "picture": "http://p0.meituan.net/wmproduct/305ced829b769b5bdec59038e9de55d66719300.jpg",
+          "price": 4.2,
+          "origin_price": 6.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": -1,
+          "restrict": 1,
+          "promotion_info": "7折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "7折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29513069",
+        "sequence": 0,
+        "promotion_info": "7折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "7折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": "act_17_17"
+      }, {
+        "id": 250055124,
+        "name": "白粥",
+        "min_price": 1.98,
+        "praise_num": 10,
+        "praise_content": "赞10",
+        "tread_num": 3,
+        "praise_num_new": 10,
+        "unit": "份",
+        "description": "需要泡菜备注一下",
+        "picture": "http://p0.meituan.net/xianfu/cd275ab97309a3eb2f43a6fe80cba9c8219136.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 272170484,
+          "spec": "",
+          "description": "需要泡菜备注一下",
+          "picture": "http://p0.meituan.net/xianfu/cd275ab97309a3eb2f43a6fe80cba9c8219136.jpg",
+          "price": 1.98,
+          "origin_price": 3.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": -1,
+          "restrict": 1,
+          "promotion_info": "6.6折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "6.6折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509095",
+        "sequence": 0,
+        "promotion_info": "6.6折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "6.6折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": "act_17_17"
+      }, {
+        "id": 501288965,
+        "name": "醪糟小汤圆",
+        "min_price": 6.4,
+        "praise_num": 9,
+        "praise_content": "赞9",
+        "tread_num": 1,
+        "praise_num_new": 9,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p1.meituan.net/wmproduct/bd3473a1e1755b48ddb169550b6a8dae223010.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 547798419,
+          "spec": "",
+          "description": "",
+          "picture": "http://p1.meituan.net/wmproduct/bd3473a1e1755b48ddb169550b6a8dae223010.jpg",
+          "price": 6.4,
+          "origin_price": 8.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": -1,
+          "restrict": 1,
+          "promotion_info": "8折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "8折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "8折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "8折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": "act_17_17"
+      }, {
+        "id": 521741038,
+        "name": "锅贴煎饺",
+        "min_price": 5.4,
+        "praise_num": 56,
+        "praise_content": "赞56",
+        "tread_num": 7,
+        "praise_num_new": 56,
+        "unit": "份",
+        "description": "一份4个 玉米猪肉陷的",
+        "picture": "http://p0.meituan.net/wmproduct/0d1467a24e9147026b5c97a68aab5515127606.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 570146417,
+          "spec": "",
+          "description": "一份4个 玉米猪肉陷的",
+          "picture": "http://p0.meituan.net/wmproduct/0d1467a24e9147026b5c97a68aab5515127606.jpg",
+          "price": 5.4,
+          "origin_price": 6.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": -1,
+          "restrict": 1,
+          "promotion_info": "9折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "9折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "9折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "9折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": "act_17_17"
+      }, {
+        "id": 225576034,
+        "name": "蔬菜粥",
+        "min_price": 1.88,
+        "praise_num": 32,
+        "praise_content": "赞32",
+        "tread_num": 0,
+        "praise_num_new": 32,
+        "unit": "份",
+        "description": "需要泡菜备注一下",
+        "picture": "http://p0.meituan.net/xianfu/35d3837ab286e845678dc2255f5f51c0223232.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245165065,
+          "spec": "",
+          "description": "需要泡菜备注一下",
+          "picture": "http://p0.meituan.net/xianfu/35d3837ab286e845678dc2255f5f51c0223232.jpg",
+          "price": 1.88,
+          "origin_price": 3.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": -1,
+          "restrict": 1,
+          "promotion_info": "6.27折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "6.27折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509095",
+        "sequence": 0,
+        "promotion_info": "6.27折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "6.27折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": "act_17_17"
+      }, {
+        "id": 225572955,
+        "name": "皮蛋瘦肉粥",
+        "min_price": 7.2,
+        "praise_num": 43,
+        "praise_content": "赞43",
+        "tread_num": 0,
+        "praise_num_new": 43,
+        "unit": "份",
+        "description": "需要泡菜备注一下",
+        "picture": "http://p0.meituan.net/xianfu/8cb7b4608c151c0076cbfc562bd7c27a200704.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245162457,
+          "spec": "",
+          "description": "需要泡菜备注一下",
+          "picture": "http://p0.meituan.net/xianfu/8cb7b4608c151c0076cbfc562bd7c27a200704.jpg",
+          "price": 7.2,
+          "origin_price": 8.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": -1,
+          "restrict": 1,
+          "promotion_info": "9折 限1份",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "9折 限1份",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509095",
+        "sequence": 0,
+        "promotion_info": "9折 限1份",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "9折 限1份",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "discount",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 1,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [{
+          "picture_url": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+          "width": 60,
+          "height": 30
+        }],
+        "log_field": {
+          "product_label_type_list": [3],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": "act_17_17"
+      }],
+      "tags": [],
+      "buzType": 0,
+      "activity_info": {
+        "activity_text": "",
+        "scheme_url": "",
+        "icon_url": ""
+      }
+    }, {
+      "tag": "29509081",
+      "name": "营养早点",
+      "icon": "",
+      "big_pic_url": "",
+      "current_page": 0,
+      "has_next_page": true,
+      "product_count": 15,
+      "type": 1,
+      "selected": 0,
+      "tag_description": "",
+      "description": "",
+      "sequence": 1,
+      "activity_tag": "",
+      "spus": [{
+        "id": 500555539,
+        "name": "芝士蛋挞",
+        "min_price": 4.0,
+        "praise_num": 8,
+        "praise_content": "赞8",
+        "tread_num": 1,
+        "praise_num_new": 8,
+        "unit": "份",
+        "description": "一份一个",
+        "picture": "http://p1.meituan.net/wmproduct/0e13c818a7bb8787a8d1cc211771c7e94648304.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 546932334,
+          "spec": "",
+          "description": "一份一个",
+          "picture": "http://p1.meituan.net/wmproduct/0e13c818a7bb8787a8d1cc211771c7e94648304.jpg",
+          "price": 4.0,
+          "origin_price": 4.0,
+          "box_num": 1.0,
+          "box_price": 0.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 452195199,
+        "name": "烧麦",
+        "min_price": 6.0,
+        "praise_num": 22,
+        "praise_content": "赞22",
+        "tread_num": 1,
+        "praise_num_new": 22,
+        "unit": "份",
+        "description": "一份4个",
+        "picture": "http://p0.meituan.net/wmproduct/3c1b8b44850fcc7af68a5205c61a61d74609542.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 493574893,
+          "spec": "",
+          "description": "一份4个",
+          "picture": "http://p0.meituan.net/wmproduct/3c1b8b44850fcc7af68a5205c61a61d74609542.jpg",
+          "price": 6.0,
+          "origin_price": 6.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 226376953,
+        "name": "甜豆浆",
+        "min_price": 2.0,
+        "praise_num": 57,
+        "praise_content": "赞57",
+        "tread_num": 3,
+        "praise_num_new": 57,
+        "unit": "份",
+        "description": "是全豆豆浆 会有一点渣 是正常现象 请大家放心饮用",
+        "picture": "http://p0.meituan.net/xianfu/7f2cc137bcb1693a74e59d553117e74f83640.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 246058337,
+          "spec": "",
+          "description": "是全豆豆浆 会有一点渣 是正常现象 请大家放心饮用",
+          "picture": "http://p0.meituan.net/xianfu/7f2cc137bcb1693a74e59d553117e74f83640.jpg",
+          "price": 2.0,
+          "origin_price": 2.0,
+          "box_num": 1.0,
+          "box_price": 0.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 226381006,
+        "name": "茶叶蛋",
+        "min_price": 2.5,
+        "praise_num": 61,
+        "praise_content": "赞61",
+        "tread_num": 3,
+        "praise_num_new": 61,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p0.meituan.net/xianfu/af5dac3c0c551005447041079f891625272384.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 246062282,
+          "spec": "",
+          "description": "",
+          "picture": "http://p0.meituan.net/xianfu/af5dac3c0c551005447041079f891625272384.jpg",
+          "price": 2.5,
+          "origin_price": 2.5,
+          "box_num": 1.0,
+          "box_price": 0.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225561435,
+        "name": "咸鸭蛋",
+        "min_price": 2.5,
+        "praise_num": 13,
+        "praise_content": "赞13",
+        "tread_num": 0,
+        "praise_num_new": 13,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p1.meituan.net/xianfu/6a96a444b684ff0033b85dec15c15d65107351.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245149128,
+          "spec": "",
+          "description": "",
+          "picture": "http://p1.meituan.net/xianfu/6a96a444b684ff0033b85dec15c15d65107351.jpg",
+          "price": 2.5,
+          "origin_price": 2.5,
+          "box_num": 1.0,
+          "box_price": 0.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 226369746,
+        "name": "酱肉包",
+        "min_price": 1.5,
+        "praise_num": 51,
+        "praise_content": "赞51",
+        "tread_num": 7,
+        "praise_num_new": 51,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p0.meituan.net/xianfu/c45d76c7cdaa0ef1b29caa16452da1af90651.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 246049626,
+          "spec": "",
+          "description": "",
+          "picture": "http://p0.meituan.net/xianfu/c45d76c7cdaa0ef1b29caa16452da1af90651.jpg",
+          "price": 1.5,
+          "origin_price": 1.5,
+          "box_num": 1.0,
+          "box_price": 0.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 3,
+          "real_stock": 3,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 226370761,
+        "name": "鲜肉包",
+        "min_price": 1.5,
+        "praise_num": 28,
+        "praise_content": "赞28",
+        "tread_num": 3,
+        "praise_num_new": 28,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p0.meituan.net/xianfu/88c00d2d9538fda00bebfe220bdd5078142976.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 246049694,
+          "spec": "",
+          "description": "",
+          "picture": "http://p0.meituan.net/xianfu/88c00d2d9538fda00bebfe220bdd5078142976.jpg",
+          "price": 1.5,
+          "origin_price": 1.5,
+          "box_num": 1.0,
+          "box_price": 0.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 2,
+          "real_stock": 2,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 226368303,
+        "name": "青菜包",
+        "min_price": 1.5,
+        "praise_num": 17,
+        "praise_content": "赞17",
+        "tread_num": 3,
+        "praise_num_new": 17,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p1.meituan.net/xianfu/4b9248d660ce89e2820af7db678bf91d76675.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 246048285,
+          "spec": "",
+          "description": "",
+          "picture": "http://p1.meituan.net/xianfu/4b9248d660ce89e2820af7db678bf91d76675.jpg",
+          "price": 1.5,
+          "origin_price": 1.5,
+          "box_num": 1.0,
+          "box_price": 0.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 3,
+          "real_stock": 3,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 226368194,
+        "name": "老面馒头",
+        "min_price": 1.0,
+        "praise_num": 23,
+        "praise_content": "赞23",
+        "tread_num": 1,
+        "praise_num_new": 23,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p0.meituan.net/xianfu/acccbb4030aad5a91a8ecf0bc2c47fc3163346.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 1,
+        "status_description": "已售罄",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 246048175,
+          "spec": "",
+          "description": "",
+          "picture": "http://p0.meituan.net/xianfu/acccbb4030aad5a91a8ecf0bc2c47fc3163346.jpg",
+          "price": 1.0,
+          "origin_price": 1.0,
+          "box_num": 1.0,
+          "box_price": 0.0,
+          "min_order_count": 1,
+          "status": 1,
+          "stock": 0,
+          "real_stock": 0,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509081",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }],
+      "tags": [],
+      "buzType": 0,
+      "activity_info": {
+        "activity_text": "",
+        "scheme_url": "",
+        "icon_url": ""
+      }
+    }, {
+      "tag": "29509095",
+      "name": "营养香粥",
+      "icon": "",
+      "big_pic_url": "",
+      "current_page": 0,
+      "has_next_page": true,
+      "product_count": 13,
+      "type": 1,
+      "selected": 0,
+      "tag_description": "",
+      "description": "",
+      "sequence": 2,
+      "activity_tag": "",
+      "spus": [{
+        "id": 356609071,
+        "name": "黄瓜皮蛋粥",
+        "min_price": 8.0,
+        "praise_num": 6,
+        "praise_content": "赞6",
+        "tread_num": 2,
+        "praise_num_new": 6,
+        "unit": "份",
+        "description": "新品欢迎品尝   多多提意见",
+        "picture": "http://p0.meituan.net/wmproduct/760a874a69afc83da2c46ca4f85c14e24304689.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 389660517,
+          "spec": "",
+          "description": "新品欢迎品尝   多多提意见",
+          "picture": "http://p0.meituan.net/wmproduct/760a874a69afc83da2c46ca4f85c14e24304689.jpg",
+          "price": 8.0,
+          "origin_price": 8.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509095",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 251348446,
+        "name": "营养素粥",
+        "min_price": 8.0,
+        "praise_num": 10,
+        "praise_content": "赞10",
+        "tread_num": 0,
+        "praise_num_new": 10,
+        "unit": "份",
+        "description": "需要泡菜备注一下",
+        "picture": "http://p0.meituan.net/xianfu/ee7d715064eb2cec5be8ee82971a7c2e212992.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 273615803,
+          "spec": "",
+          "description": "需要泡菜备注一下",
+          "picture": "http://p0.meituan.net/xianfu/ee7d715064eb2cec5be8ee82971a7c2e212992.jpg",
+          "price": 8.0,
+          "origin_price": 8.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509095",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225577080,
+        "name": "蔬菜鲜虾粥",
+        "min_price": 15.0,
+        "praise_num": 3,
+        "praise_content": "赞3",
+        "tread_num": 2,
+        "praise_num_new": 3,
+        "unit": "份",
+        "description": "需要泡菜备注一下",
+        "picture": "http://p0.meituan.net/xianfu/2c8cd062af347770e70253fd464f11b2277858.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245163886,
+          "spec": "",
+          "description": "需要泡菜备注一下",
+          "picture": "http://p0.meituan.net/xianfu/2c8cd062af347770e70253fd464f11b2277858.jpg",
+          "price": 15.0,
+          "origin_price": 15.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509095",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225574610,
+        "name": "蔬菜瘦肉粥",
+        "min_price": 8.0,
+        "praise_num": 25,
+        "praise_content": "赞25",
+        "tread_num": 1,
+        "praise_num_new": 25,
+        "unit": "份",
+        "description": "需要泡菜备注一下",
+        "picture": "http://p0.meituan.net/xianfu/56881735c696e0d68f371c42c9118f52233472.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245161850,
+          "spec": "",
+          "description": "需要泡菜备注一下",
+          "picture": "http://p0.meituan.net/xianfu/56881735c696e0d68f371c42c9118f52233472.jpg",
+          "price": 8.0,
+          "origin_price": 8.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509095",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225588009,
+        "name": "香菇玉米粥",
+        "min_price": 6.0,
+        "praise_num": 12,
+        "praise_content": "赞12",
+        "tread_num": 1,
+        "praise_num_new": 12,
+        "unit": "份",
+        "description": "需要泡菜备注一下",
+        "picture": "http://p0.meituan.net/xianfu/33cda3a98ab99a3fa8175b1eb44f42ef233472.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245175638,
+          "spec": "",
+          "description": "需要泡菜备注一下",
+          "picture": "http://p0.meituan.net/xianfu/33cda3a98ab99a3fa8175b1eb44f42ef233472.jpg",
+          "price": 6.0,
+          "origin_price": 6.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509095",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225576329,
+        "name": "紫薯山药粥",
+        "min_price": 5.0,
+        "praise_num": 28,
+        "praise_content": "赞28",
+        "tread_num": 1,
+        "praise_num_new": 28,
+        "unit": "份",
+        "description": "是甜味的 需要泡菜备注一下",
+        "picture": "http://p1.meituan.net/xianfu/712b8ac38e2af155587ec5443aaf689f339968.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245165396,
+          "spec": "",
+          "description": "是甜味的 需要泡菜备注一下",
+          "picture": "http://p1.meituan.net/xianfu/712b8ac38e2af155587ec5443aaf689f339968.jpg",
+          "price": 5.0,
+          "origin_price": 5.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509095",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225576213,
+        "name": "南瓜小米粥",
+        "min_price": 5.0,
+        "praise_num": 11,
+        "praise_content": "赞11",
+        "tread_num": 0,
+        "praise_num_new": 11,
+        "unit": "份",
+        "description": "原味 加糖请备注 需要泡菜备注一下",
+        "picture": "http://p0.meituan.net/xianfu/0467b924af46aa62b59aa31d44753dd739517.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245163503,
+          "spec": "",
+          "description": "原味 加糖请备注 需要泡菜备注一下",
+          "picture": "http://p0.meituan.net/xianfu/0467b924af46aa62b59aa31d44753dd739517.jpg",
+          "price": 5.0,
+          "origin_price": 5.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509095",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225573074,
+        "name": "小米粥",
+        "min_price": 5.0,
+        "praise_num": 4,
+        "praise_content": "赞4",
+        "tread_num": 0,
+        "praise_num_new": 4,
+        "unit": "份",
+        "description": "原味  加糖请备注",
+        "picture": "http://p1.meituan.net/xianfu/35fea7550af78f8b317b8eaaf6573bad131719.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245160311,
+          "spec": "",
+          "description": "原味  加糖请备注",
+          "picture": "http://p1.meituan.net/xianfu/35fea7550af78f8b317b8eaaf6573bad131719.jpg",
+          "price": 5.0,
+          "origin_price": 5.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509095",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225576074,
+        "name": "南瓜粥",
+        "min_price": 3.0,
+        "praise_num": 13,
+        "praise_content": "赞13",
+        "tread_num": 0,
+        "praise_num_new": 13,
+        "unit": "份",
+        "description": "需要泡菜备注一下",
+        "picture": "http://p0.meituan.net/xianfu/c33e0f20d2453c7ba812db12d4ddf833256000.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245165111,
+          "spec": "",
+          "description": "需要泡菜备注一下",
+          "picture": "http://p0.meituan.net/xianfu/c33e0f20d2453c7ba812db12d4ddf833256000.jpg",
+          "price": 3.0,
+          "origin_price": 3.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509095",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225574842,
+        "name": "红豆粥",
+        "min_price": 3.0,
+        "praise_num": 9,
+        "praise_content": "赞9",
+        "tread_num": 0,
+        "praise_num_new": 9,
+        "unit": "份",
+        "description": "是甜味的 需要泡菜备注一下",
+        "picture": "http://p1.meituan.net/xianfu/5b940cbc47ad3c5a285479914e24097b190359.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 1,
+        "status_description": "已售罄",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245163115,
+          "spec": "",
+          "description": "是甜味的 需要泡菜备注一下",
+          "picture": "http://p1.meituan.net/xianfu/5b940cbc47ad3c5a285479914e24097b190359.jpg",
+          "price": 3.0,
+          "origin_price": 3.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 1,
+          "stock": 0,
+          "real_stock": 0,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29509095",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }],
+      "tags": [],
+      "buzType": 0,
+      "activity_info": {
+        "activity_text": "",
+        "scheme_url": "",
+        "icon_url": ""
+      }
+    }, {
+      "tag": "29513069",
+      "name": "下粥菜",
+      "icon": "",
+      "big_pic_url": "",
+      "current_page": 0,
+      "has_next_page": true,
+      "product_count": 6,
+      "type": 1,
+      "selected": 0,
+      "tag_description": "",
+      "description": "",
+      "sequence": 3,
+      "activity_tag": "",
+      "spus": [{
+        "id": 225582115,
+        "name": "肉末豇豆",
+        "min_price": 6.0,
+        "praise_num": 31,
+        "praise_content": "赞31",
+        "tread_num": 0,
+        "praise_num_new": 31,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p0.meituan.net/xianfu/0a804b4ecf235f2e85770c58f557eefc226681.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245170655,
+          "spec": "",
+          "description": "",
+          "picture": "http://p0.meituan.net/xianfu/0a804b4ecf235f2e85770c58f557eefc226681.jpg",
+          "price": 6.0,
+          "origin_price": 6.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29513069",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [{
+          "picture_url": "http://p0.meituan.net/aichequan/e4384905366c1a4d3a3d8c7831c79f7c1346.png",
+          "width": 60,
+          "height": 30
+        }],
+        "log_field": {
+          "product_label_type_list": [3],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225581542,
+        "name": "川味香肠",
+        "min_price": 15.0,
+        "praise_num": 11,
+        "praise_content": "赞11",
+        "tread_num": 1,
+        "praise_num_new": 11,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p1.meituan.net/xianfu/8c6b546e33450a348fe63470b2d968eb95853.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245170474,
+          "spec": "",
+          "description": "",
+          "picture": "http://p1.meituan.net/xianfu/8c6b546e33450a348fe63470b2d968eb95853.jpg",
+          "price": 15.0,
+          "origin_price": 15.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29513069",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225581050,
+        "name": "剁椒土豆丝",
+        "min_price": 8.0,
+        "praise_num": 18,
+        "praise_content": "赞18",
+        "tread_num": 0,
+        "praise_num_new": 18,
+        "unit": "份",
+        "description": "这个菜有点辣哦 不怎么吃辣的小伙伴忽拍哦\n辣味不可变",
+        "picture": "http://p1.meituan.net/xianfu/60bd5af8b6ca415ec9ce9aac59d3c88e243712.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [{
+          "name": "辣度",
+          "values": [{
+            "id": 104319178,
+            "value": "特辣"
+          }]
+        }],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245168679,
+          "spec": "",
+          "description": "这个菜有点辣哦 不怎么吃辣的小伙伴忽拍哦\n辣味不可变",
+          "picture": "http://p1.meituan.net/xianfu/60bd5af8b6ca415ec9ce9aac59d3c88e243712.jpg",
+          "price": 8.0,
+          "origin_price": 8.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29513069",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225579583,
+        "name": "香辣豆腐丝",
+        "min_price": 6.0,
+        "praise_num": 12,
+        "praise_content": "赞12",
+        "tread_num": 0,
+        "praise_num_new": 12,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p1.meituan.net/xianfu/a40781fc95e926dae255f324467b8c5b276480.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245168770,
+          "spec": "",
+          "description": "",
+          "picture": "http://p1.meituan.net/xianfu/a40781fc95e926dae255f324467b8c5b276480.jpg",
+          "price": 6.0,
+          "origin_price": 6.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29513069",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 225580541,
+        "name": "跳水白菜",
+        "min_price": 5.0,
+        "praise_num": 6,
+        "praise_content": "赞6",
+        "tread_num": 3,
+        "praise_num_new": 6,
+        "unit": "份",
+        "description": "本店特色泡菜",
+        "picture": "http://p0.meituan.net/xianfu/2208980072ee078273619d3c6ac9e762217088.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 245167849,
+          "spec": "",
+          "description": "本店特色泡菜",
+          "picture": "http://p0.meituan.net/xianfu/2208980072ee078273619d3c6ac9e762217088.jpg",
+          "price": 5.0,
+          "origin_price": 5.0,
+          "box_num": 1.0,
+          "box_price": 1.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29513069",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }],
+      "tags": [],
+      "buzType": 0,
+      "activity_info": {
+        "activity_text": "",
+        "scheme_url": "",
+        "icon_url": ""
+      }
+    }, {
+      "tag": "29476406",
+      "name": "套餐系列",
+      "icon": "",
+      "big_pic_url": "",
+      "current_page": 0,
+      "has_next_page": true,
+      "product_count": 5,
+      "type": 1,
+      "selected": 0,
+      "tag_description": "",
+      "description": "",
+      "sequence": 4,
+      "activity_tag": "",
+      "spus": [{
+        "id": 662540943,
+        "name": "2人套餐（皮蛋瘦肉粥2+葱香鸡蛋饼2+肉末豇豆1+开胃菜1）",
+        "min_price": 35.0,
+        "praise_num": 3,
+        "praise_content": "赞3",
+        "tread_num": 0,
+        "praise_num_new": 3,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p0.meituan.net/wmproduct/4e5f3113c43734a44d6f6191985caaa2279244.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 718642222,
+          "spec": "",
+          "description": "",
+          "picture": "http://p0.meituan.net/wmproduct/4e5f3113c43734a44d6f6191985caaa2279244.jpg",
+          "price": 35.0,
+          "origin_price": 35.0,
+          "box_num": 1.0,
+          "box_price": 2.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29476406",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 662458876,
+        "name": "套餐（皮蛋瘦肉粥1+葱香鸡蛋饼1+肉末豇豆1+开胃菜1）",
+        "min_price": 20.0,
+        "praise_num": 6,
+        "praise_content": "赞6",
+        "tread_num": 1,
+        "praise_num_new": 6,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p0.meituan.net/wmproduct/a60a6228a4ce82c9ddc6e1ec67cda0b3279730.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 718548959,
+          "spec": "",
+          "description": "",
+          "picture": "http://p0.meituan.net/wmproduct/a60a6228a4ce82c9ddc6e1ec67cda0b3279730.jpg",
+          "price": 20.0,
+          "origin_price": 20.0,
+          "box_num": 1.0,
+          "box_price": 2.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29476406",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 546350022,
+        "name": "套餐（皮蛋瘦肉粥1+煎饺4个+肉末豇豆1+开胃小菜1）",
+        "min_price": 20.0,
+        "praise_num": 4,
+        "praise_content": "赞4",
+        "tread_num": 0,
+        "praise_num_new": 4,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p0.meituan.net/wmproduct/941518e2ab161cbba7630cb415fb68615593947.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 596604802,
+          "spec": "",
+          "description": "",
+          "picture": "http://p0.meituan.net/wmproduct/941518e2ab161cbba7630cb415fb68615593947.jpg",
+          "price": 20.0,
+          "origin_price": 20.0,
+          "box_num": 1.0,
+          "box_price": 2.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29476406",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }, {
+        "id": 226380032,
+        "name": "皮蛋瘦肉粥1+肉末豇豆1",
+        "min_price": 14.0,
+        "praise_num": 1,
+        "praise_content": "赞1",
+        "tread_num": 0,
+        "praise_num_new": 1,
+        "unit": "份",
+        "description": "",
+        "picture": "http://p1.meituan.net/wmproduct/080ce2c81bf9368bf8c41499efefb51f6890839.jpg",
+        "month_saled": 0,
+        "month_saled_content": "",
+        "status": 0,
+        "status_description": "",
+        "status_remind_list": [],
+        "attrs": [],
+        "sku_label": "规格",
+        "skus": [{
+          "id": 246060268,
+          "spec": "",
+          "description": "",
+          "picture": "http://p1.meituan.net/wmproduct/080ce2c81bf9368bf8c41499efefb51f6890839.jpg",
+          "price": 14.0,
+          "origin_price": 14.0,
+          "box_num": 1.0,
+          "box_price": 2.0,
+          "min_order_count": 1,
+          "status": 0,
+          "stock": 0,
+          "real_stock": -1,
+          "activity_stock": 0,
+          "restrict": 0,
+          "promotion_info": "",
+          "promotion": {
+            "label_pic": "",
+            "promotion_text": "",
+            "sku_info_color": "",
+            "width": 0,
+            "height": 0
+          }
+        }],
+        "tag": "29476406",
+        "sequence": 0,
+        "promotion_info": "",
+        "promotion": {
+          "label_pic": "",
+          "promotion_text": "",
+          "sku_info_color": "",
+          "width": 0,
+          "height": 0
+        },
+        "activity_tag": "",
+        "share_tip": {
+          "channels": [],
+          "description": "",
+          "description_icon": "",
+          "share_button_icon": "",
+          "activity_id": 0,
+          "share_info": {
+            "icon": "",
+            "title": "",
+            "content": "",
+            "url": "",
+            "weixin_url": ""
+          }
+        },
+        "activity_type": 0,
+        "activity_policy": {
+          "discount_by_count": {
+            "count": 0,
+            "discount": 1.0
+          }
+        },
+        "friends_praise_content": "",
+        "friends_nickname_praise_content": "",
+        "product_label_picture": "",
+        "product_label_picture_list": [],
+        "log_field": {
+          "product_label_type_list": [],
+          "recommend_label_type": 0
+        },
+        "label_text": "",
+        "activity_tag_id": ""
+      }],
+      "tags": [],
+      "buzType": 0,
+      "activity_info": {
+        "activity_text": "",
+        "scheme_url": "",
+        "icon_url": ""
+      }
+    }],
+    "poi_info": {
+      "id": 437709701613856,
+      "name": "好吃粥",
+      "distance": "2.1km",
+      "status": 1,
+      "shipping_time": "06:00-14:30",
+      "shipping_fee": 2.5,
+      "avg_delivery_time": 35,
+      "min_price": 15.0,
+      "bulletin": "谢谢亲亲们一年来陪伴我们成长，新的一年祝大家生活愉快，工作顺利.我们也会一如既往为您送上好吃又健康的早餐，不忘初心在这等您🌹🌹",
+      "discounts2": [{
+        "id": 103,
+        "type": 24,
+        "info": "有机会领取商家代金券",
+        "icon_url": "http://p0.meituan.net/xianfu/c2c0f31d0ebf0f60af115d058169c492992.png",
+        "use_icon_from_server": 1,
+        "display_code": 2,
+        "sequence": 6
+      }, {
+        "id": 100,
+        "type": 20,
+        "info": "实际支付30元返3元商家代金券",
+        "icon_url": "http://p0.meituan.net/xianfu/652eea4034250563fe11b02e3219ba8d981.png",
+        "use_icon_from_server": 1,
+        "display_code": 2,
+        "sequence": 7
+      }],
+      "app_delivery_tip": "由美团快送提供配送服务",
+      "support_pay": 1,
+      "invoice_support": 0,
+      "is_favorite": 0,
+      "can_use_coupon": 1,
+      "remind_infos": [],
+      "buz_type": 0,
+      "buz_code": 0,
+      "wm_poi_score": 4.7,
+      "poi_back_pic_url": "http://p1.meituan.net/aichequan/e597d736e85846ee41d55440a5a86ad9193992.png",
+      "pic_url": "http://p1.meituan.net/xianfu/8fecde660d5554044fa7e192c7cdeb6336864.jpg",
+      "delivery_type": 0,
+      "origin_shipping_fee_tip": "",
+      "shipping_fee_tip": "配送 ¥2.5",
+      "min_price_tip": "起送 ¥15",
+      "delivery_time_tip": "35分钟",
+      "discount_restrict": 0,
+      "restrict_toast": "",
+      "share_tip": {
+        "channels": [2, 3],
+        "description": "9元代金券送给好友",
+        "description_icon": "http://p1.meituan.net/xianfu/1368eb6dfafce0a1bea172fb52c821662048.png",
+        "share_button_icon": "http://p1.meituan.net/xianfu/eaab23f1671def475e516670494ec3dd4096.png",
+        "activity_id": 16439256,
+        "share_info": {
+          "icon": "http://p1.meituan.net/xianfu/8fecde660d5554044fa7e192c7cdeb6336864.jpg",
+          "title": "好吃粥",
+          "content": "手快有,手慢无,抢券下单更优惠[美团外卖]",
+          "url": "http://i.waimai.meituan.com/external/poi/437709701613856?utm_source=5913&amp;wmi_from=cpoiinfo&amp;user_id=308344176&from_act_id=101",
+          "weixin_url": "pages/external/poi?poi_id=437709701613856&user_id=308344176&utm_source=7004&from_act_id=101"
+        }
+      },
+      "has_poi_env": false,
+      "shipping_fee_type": 2,
+      "poi_sell_status": 1,
+      "score": 0.0,
+      "comment_number": 0,
+      "head_pic_url": "",
+      "promotion_head_pic_url": "",
+      "story_info": {
+        "poi_logo_icon": "",
+        "poi_tab_icon": "",
+        "entrance_url": ""
+      },
+      "extraStatInfo": ""
+    },
+    "shopping_cart": {
+      "shopping_cart_icon": "",
+      "empty_shopping_cart_icon": "",
+      "shipping_fee_cart_tip": "另需配送费¥2.5",
+      "activity_info": null,
+      "self_delivery_tip": "",
+      "bg_color": "",
+      "prompt_text": ""
+    },
+    "friend_status": 3,
+    "poi_notifications": [],
+    "shopping_cart_entrance": {
+      "visible": 1,
+      "content": "新增拼单功能，可以多人点餐咯~"
+    },
+    "recommend_food_info": {
+      "title": "",
+      "spu_list": [],
+      "log_field": {
+        "recommend_food_type": 1
+      }
+    },
+    "is_show_rcmd_pois": false
+  },
+  "code": 0,
+  "msg": "成功"
+}

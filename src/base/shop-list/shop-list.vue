@@ -54,6 +54,7 @@
 <script>
   import Star from '@/base/star/star'
   import {prefixStyle} from '@/common/js/dom'
+
   const transform = prefixStyle('transform')
   const transition = prefixStyle('transition')
   const MAX_LENGTH = 150
@@ -182,7 +183,7 @@
       position relative
       display flex
       padding 20px 10px
-      border-1px(#efefef)
+      border-1px($color-split-grey)
       .img
         position relative
         flex 0 0 7rem

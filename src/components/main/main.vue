@@ -36,6 +36,7 @@
   import Loading from '@/base/loading/loading'
   import {prefixStyle} from '@/common/js/dom'
   import {mapMutations} from 'vuex'
+  import shopManager from '@/common/api/shop'
 
   const MAX_PULL_LENGTH = 100
   const LENGTH_TO_REFRESH = 50
@@ -43,6 +44,7 @@
   const ORIGIN_HEDEAR_HEIGHT = 70
   const transform = prefixStyle('transform')
   const transition = prefixStyle('transition')
+
   export default {
     created() {
       this.getShopList()
@@ -74,10 +76,7 @@
         this.$refs.header.style.background = `rgba(217,63,48,${percent})`
       },
       getShopList() {
-        this.$http({
-          method: 'get',
-          url: '/static/json/shops.json'
-        }).then((res) => {
+        shopManager.getShopList().then((res) => {
           this.shopList = res.data.poilist
         })
       },
