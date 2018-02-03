@@ -2,10 +2,13 @@
   <transition name="slide">
     <div class="shop-detail">
       <div class="header">
+        <div class="background">
+          <img :src="shop.pic_url" width="100%" height="100%">
+        </div>
+        <div class="avatar">
+          <img :src="shop.pic_url" width="100%" height="100%">
+        </div>
         <div class="content-wrapper">
-          <div class="avatar">
-            <img :src="shop.pic_url" width="100%" height="100%">
-          </div>
           <div class="content">
             <h1 class="title">
               <span class="icon" v-show="shop.poi_type_icon">
@@ -16,15 +19,14 @@
               </span>
             </h1>
             <div class="describe">
-              美团专送/{{shop.mt_delivery_time}}送达
+              <span class="item">{{data.poi_info.app_delivery_tip}}</span>
+              <span class="item">{{data.poi_info.delivery_time_tip}}送达</span>
+              <span class="item">{{data.poi_info.min_price_tip}}</span>
             </div>
-            <div class="support">
-              支持开发票
+            <div class="bulletin">
+              {{data.poi_info.bulletin}}
             </div>
           </div>
-        </div>
-        <div class="background">
-          <img :src="shop.pic_url" width="100%" height="100%">
         </div>
         <div class="back-icon" @click="back">
           <i class="icon-back"></i>
@@ -58,6 +60,7 @@
 
 <script type="text/ecmascript-6">
   import {mapGetters} from 'vuex'
+  import {getFoods} from '@/common/api/food'
 
   export default {
     computed: {
@@ -65,9 +68,22 @@
         'shop'
       ])
     },
+    created() {
+      this.getData()
+    },
+    data() {
+      return {
+        data: []
+      }
+    },
     methods: {
       back() {
         this.$router.push("/")
+      },
+      getData() {
+        getFoods().then(res => {
+          this.data = res.data.data
+        })
       }
     }
   }
@@ -90,24 +106,20 @@
     .header
       position relative
       width 100%
-      height 10rem
-      color: #fff;
-      background: rgba(7, 17, 27, 0.5);
+      height 12rem
       .background
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-        z-index: -1
+        height: 30%
         filter: blur(10px)
+      .avatar
+        position absolute
+        top 1rem
+        left 50%
+        transform translateX(-50%)
+        width 5rem
+        height 4rem
       .content-wrapper
         padding 2.5rem 1rem 1.5rem 2rem
-        .avatar
-          display inline-block
-          vertical-align middle
-          width 5rem
-          height 5rem
+        text-align center
         .content
           display inline-block
           vertical-align middle
@@ -121,8 +133,20 @@
               font-size 1.1rem
               font-weight bold
           .describe
-            font-size $font-size-small
+            font-size 0
             margin-bottom 0.8rem
+            .item
+              font-size $font-size-small
+              margin-right .5rem
+          .bulletin
+            width 15rem
+            color $color-text-grey
+            white-space nowrap
+            overflow-x hidden
+            padding .1rem
+            text-overflow ellipsis
+            margin-bottom 0.8rem
+            font-size $font-size-small
           .support
             font-size $font-size-small
       .back-icon

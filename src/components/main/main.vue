@@ -15,7 +15,41 @@
     <div class="icon-list-wrapper">
       <icon-list :data="listData"></icon-list>
     </div>
-    <split></split>
+    <div class="red-packet">
+      <img width="100%" height="100%" src="static/meituan/red-packet.png">
+    </div>
+    <div class="activity">
+      <div class="item">
+        <h2 class="name" style="color: #e81919">
+          限量抢购
+        </h2>
+        <p class="desc">
+          超值美味 9.9元起
+        </p>
+        <p class="desc-2">
+          <span style="color: #e81919">1398</span>人正在抢 >
+        </p>
+        <div class="pic">
+          <img width="60%" height="100%" src="static/meituan/ac-food1.png">
+        </div>
+      </div>
+      <div class="item">
+        <h2 class="name">
+          品质套餐
+        </h2>
+        <p class="desc">
+          搭配齐全吃得好
+        </p>
+        <p class="desc-2">
+          <span style="color: #af8260">
+            立即抢购 >
+          </span>
+        </p>
+        <div class="pic">
+          <img width="60%" height="100%" src="static/meituan/ac-food2.png">
+        </div>
+      </div>
+    </div>
     <div class="shop-list">
       <h1 class="title">
         附近商家
@@ -71,9 +105,6 @@
             })
           }, 1000)
         }
-        // 下拉透明
-        const percent = Math.max(0.2, 1 - leaveTop / ORIGIN_HEDEAR_HEIGHT)
-        this.$refs.header.style.background = `rgba(217,63,48,${percent})`
       },
       getShopList() {
         shopManager.getShopList().then((res) => {
@@ -226,13 +257,58 @@
 
   .icon-list-wrapper
     padding 5px 0
-
+  .red-packet
+    height 6rem
+    padding 0 1rem
+  .activity
+    display flex
+    padding 0 .5rem
+    margin-bottom .8rem
+    .item
+      width 50%
+      padding 1rem 0 0 1rem
+      margin-right .3rem
+      background: linear-gradient(0deg,#f4f4f4 5%,#fafafa 95%);
+      .name
+        font-size $font-size-large
+        font-weight bold
+        margin-bottom .8rem
+      .desc
+        font-size $font-size-small
+        color $color-text-dark-grey
+        margin-bottom 1rem
+      .desc-2, .desc-2 span
+        font-weight bold
+      .pic
+        position relative
+        height 4rem
+        img
+          width 8rem
+          height 6rem
+          position absolute
+          right 0
+          bottom -1rem
   .shop-list
     .title
       font-weight 700
       text-align center
-      padding 10px 0
-
+      padding 2rem 0
+      &:before
+        display: inline-block;
+        vertical-align middle
+        margin-right .3rem
+        content: "";
+        width: 2rem;
+        height: .1rem;
+        background-color: #999;
+      &:after
+        display: inline-block;
+        vertical-align middle
+        margin-left .3rem
+        content: "";
+        width: 2rem;
+        height: .1rem;
+        background-color: #999;
   .load-more
     height: 100px
 </style>

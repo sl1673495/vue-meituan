@@ -5,9 +5,11 @@
         <li class="type" :class="{'active': index === activeIndex}" v-for="(food,index) in foods"
             @click="selectMenu(index)">
           <img v-if="food.icon" :src="food.icon" width="15px" height="15px"> {{food.name}}
+          <span class="badge" v-if="getBoughtNumber(index)">
+            {{getBoughtNumber(index)}}
+          </span>
         </li>
       </ul>
-
       <ul class="food-list" ref="foodList">
         <transition name="fade">
           <div class="one-type" v-show="refreshTag">
@@ -52,6 +54,7 @@
     computed: {},
     data() {
       return {
+        data: {},
         foods: [],
         activeIndex: 0,
         activeList: {},
@@ -64,6 +67,13 @@
           this.foods = res.data.data.food_spu_tags
           this.activeList = this.foods[0]
         })
+      },
+      getBoughtNumber(index){
+        let total = 0;
+        this.foods[index].spus.forEach(val => {
+          total += val.number || 0
+        })
+        return total || ''
       },
       selectMenu(index) {
         if (index === this.activeIndex) {
@@ -78,7 +88,6 @@
 
       },
       addFood(food) {
-        console.log(food)
         if (!food.number) {
           this.$set(food, 'number', 1)
           return
@@ -107,7 +116,7 @@
 
   .foods
     position relative
-    height calc(100% - 14.5rem)
+    height calc(100% - 16.5rem)
     .food-wrapper
       display flex
       width 100%
@@ -115,16 +124,31 @@
       .menu
         flex 0 0 7rem
         height 100%
+        overflow-y auto
+        -webkit-overflow-scrolling: touch;
         background $color-grey-background
         .type
-          height 3rem
-          line-height 3rem
+          position relative
+          height 4rem
+          line-height 4rem
           text-align center
-          font-size $font-size-small
+          font-size .9rem
+          color $color-text-dark-grey
           &.active
             background #fff
           img
             vertical-align middle
+          .badge
+            position absolute
+            right .5rem
+            top .5rem
+            padding .05rem .3rem
+            line-height 1rem
+            color #fff
+            font-weight 700
+            font-size .7rem
+            border-radius .7rem
+            background-image: linear-gradient(-90deg,#ff7416,#ff3c15 98%);
       .food-list
         flex 1
         overflow-y scroll
