@@ -1,14 +1,14 @@
 <template>
   <div class="cart-control">
     <transition name="move">
-      <div class="cart-decrease" v-show="food.number" @click="decrease">
+      <div class="cart-decrease" v-show="food.number" @click.stop="decrease">
         <span class="inner icon-sell-remove_circle_outline"></span>
       </div>
     </transition>
     <div class="number" v-show="food.number">
       {{food.number}}
     </div>
-    <div class="cart-add" @click="add">
+    <div class="cart-add" @click.stop="add">
       <span class="inner icon-sell-add_circle"></span>
     </div>
   </div>
@@ -29,7 +29,11 @@
     },
     methods: {
       add() {
-        this.$emit('add')
+        if (!this.food.number) {
+          this.$set(this.food, 'number', 1)
+          return
+        }
+        this.food.number ++
       },
       decrease() {
         this.food.number --
@@ -51,6 +55,8 @@
       vertical-align middle
       font-size $font-size-small
       color $color-text-grey
+      opacity: 1
+      transform: translate3d(0, 0, 0)
       .inner
         display: inline-block
         transition: all 0.4s linear

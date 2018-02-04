@@ -1,6 +1,6 @@
 <template>
   <div class="foods" ref="foods">
-    <div class="food-wrapper">
+    <div class="food-wrapper" ref="foodWrapper">
       <ul class="menu">
         <li class="type" :class="{'active': index === activeIndex}" v-for="(food,index) in foods"
             @click="selectMenu(index)">
@@ -17,17 +17,17 @@
               {{activeList.name}}
             </h2>
             <ul>
-              <li class="food-item" v-for="spu in activeList.spus">
+              <li @click="showFood(spu)" class="food-item" v-for="spu in activeList.spus">
                 <div class="icon">
                   <img v-lazy="spu.picture" width="100%" height="100%">
                 </div>
                 <div class="content">
                   <h2 class="name">{{spu.name}}</h2>
                   <div class="price">
-                    <span class="symbol">￥</span>{{spu.min_price}}
+                    <span class="symbol">¥</span>{{spu.min_price}}
                   </div>
                   <div class="control">
-                    <cart-control :food="spu" @add="addFood(spu)"></cart-control>
+                    <cart-control :food="spu"></cart-control>
                   </div>
                 </div>
               </li>
@@ -35,7 +35,41 @@
           </div>
         </transition>
       </ul>
+      <shop-cart
+        :deliveryPrice="info.shipping_fee"
+        :minPrice="info.min_price"
+        :selectFoods="selectFoods"></shop-cart>
+      <middle-modal
+        :visible.sync="foodShow"
+        width="80%">
+        <div class="food-detail">
+          <div class="img-wrapper">
+            <img :src="selectFood.picture">
+          </div>
+          <div class="content">
+            <h2 class="name">
+              {{selectFood.name}}
+            </h2>
+            <div class="desc">
+              月售{{selectFood.tread_num}}份 {{selectFood.praise_content}}
+            </div>
+            <div class="bottom">
+              <div class="price">
+                <span class="symbol">￥</span>{{selectFood.min_price}}
+              </div>
+              <div class="control">
+                <cart-control :food="selectFood"></cart-control>
+              </div>
+            </div>
+          </div>
+        </div>
+      </middle-modal>
 
+      <middle-modal
+        visible.sync="bulletinShow"
+        width="70%">
+
+      </middle-modal>
     </div>
   </div>
 </template>
@@ -43,7 +77,8 @@
 <script>
   import {getFoods} from '@/common/api/food'
   import CartControl from '@/base/cart-control/cart-control'
-
+  import MiddleModal from '@/base/middle-modal/middle-modal'
+  import ShopCart from '@/base/shopcart/shopcart'
   export default {
     created() {
       this.getFoods()
@@ -51,19 +86,34 @@
     mounted() {
 
     },
-    computed: {},
     data() {
       return {
-        data: {},
+        info: {},
         foods: [],
         activeIndex: 0,
         activeList: {},
-        refreshTag: true
+        refreshTag: true,
+        foodShow: false,
+        selectFood: {}
+      }
+    },
+    computed: {
+      selectFoods() {
+        let res = []
+        this.foods.forEach(food => {
+          food.spus.forEach(spu => {
+            if (spu.number) {
+              res.push(spu)
+            }
+          })
+        })
+        return res
       }
     },
     methods: {
       getFoods() {
         getFoods().then(res => {
+          this.info = res.data.data.poi_info
           this.foods = res.data.data.food_spu_tags
           this.activeList = this.foods[0]
         })
@@ -84,19 +134,18 @@
         this.activeIndex = index
         setTimeout(() => {
           this.refreshTag = true
-        }, 100)
-
+        }, 200)
       },
-      addFood(food) {
-        if (!food.number) {
-          this.$set(food, 'number', 1)
-          return
-        }
-        food.number ++
+      showFood(food) {
+        console.log(food)
+        this.foodShow = true
+        this.selectFood = food
       }
     },
     components: {
-      CartControl
+      CartControl,
+      MiddleModal,
+      ShopCart
     }
   }
 </script>
@@ -105,18 +154,9 @@
   @import "~common/stylus/variable.styl"
   @import "~common/stylus/mixin.styl"
 
-  .fade-enter-active {
-    transition: opacity .5s;
-  }
-
-  .fade-enter /* .fade-leave-active below version 2.1.8 */
-  {
-    opacity: 0;
-  }
-
   .foods
     position relative
-    height calc(100% - 16.5rem)
+    height calc(100% - 20.2rem)
     .food-wrapper
       display flex
       width 100%
@@ -148,7 +188,7 @@
             font-weight 700
             font-size .7rem
             border-radius .7rem
-            background-image: linear-gradient(-90deg,#ff7416,#ff3c15 98%);
+            background: $color-red
       .food-list
         flex 1
         overflow-y scroll
@@ -186,11 +226,46 @@
               .price
                 font-size $font-size-medium-x
                 font-weight bold
-                color #f60
+                color $color-price
                 .symbol
                   font-size .7rem
               .control
                 position absolute
                 right 0
                 bottom 0
+
+
+
+  .food-detail
+    .img-wrapper
+      position relative
+      padding-top 100%
+      img
+        position absolute
+        width 100%
+        height 100%
+        top 0
+        left 0
+        border-radius 1.066667vw 1.066667vw 0 0
+    .content
+      padding 1rem
+      .name
+        font-weight bold
+        font-size $font-size-medium
+        margin-bottom .5rem
+      .desc
+        font-size $font-size-small
+        color $color-text-grey
+        margin-bottom 2rem
+      .bottom
+        display flex
+        justify-content space-between
+        align-items center
+        .price
+          font-size $font-size-medium-x
+          color $color-price
+          font-weight bold
+        .symbol
+          font-size .7rem
+
 </style>

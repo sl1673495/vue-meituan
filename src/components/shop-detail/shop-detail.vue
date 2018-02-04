@@ -1,6 +1,8 @@
 <template>
   <transition name="slide">
-    <div class="shop-detail">
+    <div class="shop-detail"
+      @touchstart="shopTouchStart"
+         @touchmove="shopTouchMove">
       <div class="header">
         <div class="background">
           <img :src="shop.pic_url" width="100%" height="100%">
@@ -84,12 +86,18 @@
         getFoods().then(res => {
           this.data = res.data.data
         })
+      },
+      shopTouchStart(e) {
+
+      },
+      shopTouchMove(e) {
+
       }
     }
   }
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus">
+<style lang="stylus" rel="stylesheet/stylus" scoped>
   @import "~common/stylus/variable.styl"
   @import "~common/stylus/mixin.styl"
 
