@@ -1,7 +1,9 @@
 <template>
   <div class="foods" ref="foods">
     <div class="food-wrapper" ref="foodWrapper">
-      <ul class="menu">
+      <ul class="menu" id="menuList" ref="menuList"
+        @touchstart="menuTouchStart"
+        @touchend="menuTouchEnd">
         <li class="type" :class="{'active': index === activeIndex}" v-for="(food,index) in foods"
             @click="selectMenu(index)">
           <img v-if="food.icon" :src="food.icon" width="15px" height="15px"> {{food.name}}
@@ -10,7 +12,9 @@
           </span>
         </li>
       </ul>
-      <ul class="food-list" ref="foodList">
+      <ul class="food-list" ref="foodList" id="foodList"
+        @touchstart="foodTouchStart"
+        @touchend="foodTouchEnd">
         <transition name="fade">
           <div class="one-type" v-show="refreshTag">
             <h2 class="title">
@@ -79,12 +83,15 @@
   import CartControl from '@/base/cart-control/cart-control'
   import MiddleModal from '@/base/middle-modal/middle-modal'
   import ShopCart from '@/base/shopcart/shopcart'
+
+  const HEADER_HEIGHT = '12rem'
+
   export default {
     created() {
       this.getFoods()
     },
     mounted() {
-
+      this._listEvent()
     },
     data() {
       return {
@@ -137,9 +144,34 @@
         }, 200)
       },
       showFood(food) {
-        console.log(food)
         this.foodShow = true
         this.selectFood = food
+      },
+      foodTouchStart() {
+        this.$emit('foodTouchStart')
+      },
+      foodTouchEnd() {
+        this.$emit('foodTouchEnd')
+      },
+      menuTouchStart() {
+        this.$emit('menuTouchStart')
+      },
+      menuTouchEnd() {
+        this.$emit('menuTouchEnd')
+      },
+      _scrollToTop(dom) {
+        dom.addEventListener('scroll', e=> {
+          if (dom.scrollTop <= 0) {
+            const header = document.getElementById('shopHeader')
+            header.style.height = HEADER_HEIGHT
+          }
+        })
+      },
+      _listEvent() {
+        const foodList = this.$refs.foodList
+        const menuList = this.$refs.menuList
+        this._scrollToTop(foodList)
+        this._scrollToTop(menuList)
       }
     },
     components: {
@@ -156,7 +188,7 @@
 
   .foods
     position relative
-    height calc(100% - 20.2rem)
+    height calc(100% - 5.2rem)
     .food-wrapper
       display flex
       width 100%

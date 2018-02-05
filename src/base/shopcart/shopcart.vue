@@ -26,7 +26,7 @@
       <div class="mask" v-show="listShow" @click="hide"></div>
     </transition>
     <transition name="fold">
-      <div class="shop-list" v-show="listShow">
+      <div class="shop-list" v-show="listShow" @touchmove="move">
         <div class="header">
           <h2 class="title">
             已选商品
@@ -35,7 +35,12 @@
         <ul class="list-wrapper">
           <li class="item" v-for="food in selectFoods">
             <div class="food">
-              <img :src="food.picture">{{food.name}}
+              <div class="img">
+                <img :src="food.picture">
+              </div>
+              <div class="name">
+                {{food.name}}
+              </div>
             </div>
             <div class="price">
               ¥{{_calcPrice(food)}}
@@ -87,6 +92,9 @@
       },
       _calcPrice(food) {
         return oneDec(food.min_price * food.number)
+      },
+      move(e) {
+        e.stopPropagation()
       }
     },
     computed: {
@@ -231,12 +239,18 @@
         border-1px($color-split-grey)
         .food
           padding 1rem 1.5rem
-          img
-            width 3rem
-            height 3rem
-            border-radius 50%
-            vertical-align middle
-            margin-right .3rem
+          display flex
+          align-items center
+          .img
+            flex 0 0 3rem
+            img
+              width 3rem
+              height 3rem
+              border-radius 50%
+              vertical-align middle
+              margin-right .3rem
+          .name
+            flex 1
         .price
           flex 1
           text-align right

@@ -3,7 +3,7 @@
     <div class="shop-detail"
       @touchstart="shopTouchStart"
          @touchmove="shopTouchMove">
-      <div class="header">
+      <div class="header" id="shopHeader" ref="shopHeader">
         <div class="background">
           <img :src="shop.pic_url" width="100%" height="100%">
         </div>
@@ -34,10 +34,6 @@
           <i class="icon-back"></i>
         </div>
       </div>
-      <div class="notify">
-        <img src="http://p0.meituan.net/xianfu/c2c0f31d0ebf0f60af115d058169c492992.png" width="15px" height="15px">
-        有机会领取商家代金券
-      </div>
       <div class="tab-bar">
         <router-link :to="{name:'foods'}" class="tab-item">
           <span class="text">
@@ -55,7 +51,11 @@
           </span>
         </a>
       </div>
-      <router-view/>
+      <router-view
+        @foodTouchStart="foodTouchStart"
+        @foodTouchEnd="foodTouchEnd"
+        @menuTouchStart="menuTouchStart"
+        @menuTouchEnd="menuTouchEnd"/>
     </div>
   </transition>
 </template>
@@ -64,6 +64,7 @@
   import {mapGetters} from 'vuex'
   import {getFoods} from '@/common/api/food'
 
+  const HEADER_HEIGHT = '12rem'
   export default {
     computed: {
       ...mapGetters([
@@ -89,9 +90,45 @@
       },
       shopTouchStart(e) {
 
+        this.touch = {}
+        const touches =e.touches[0]
+        this.touch.startY = touches.clientY
       },
       shopTouchMove(e) {
-
+        const foods = document.getElementById('foods')
+        const touches =e.touches[0]
+        let diffY = this.touch.startY - touches.clientY
+        if (diffY > 0) {
+          this.$refs.shopHeader.style.height = 0
+        }else {
+          const foodList = document.getElementById('foodList')
+          const menuList = document.getElementById('menuList')
+          // 滑动食品列表时
+          if (this.foodTouch) {
+            if (foodList.scrollTop > 0) {
+              return
+            }
+          }
+          // 滑动菜单列表时
+          if (this.menuTouch) {
+            if (menuList.scrollTop > 0) {
+              return
+            }
+          }
+          this.$refs.shopHeader.style.height = HEADER_HEIGHT
+        }
+      },
+      foodTouchStart() {
+        this.foodTouch = true
+      },
+      foodTouchEnd() {
+        this.foodTouch = false
+      },
+      menuTouchStart() {
+        this.menuTouch = true
+      },
+      menuTouchEnd() {
+        this.menuTouch = false
       }
     }
   }
@@ -115,6 +152,8 @@
       position relative
       width 100%
       height 12rem
+      overflow hidden
+      transition all .3s
       .background
         height: 30%
         filter: blur(10px)
