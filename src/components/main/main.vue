@@ -1,9 +1,5 @@
 <template>
-  <div class="main"
-       @touchstart="mainTouchStart"
-       @touchmove="mainTouchMove"
-       @touchend="mainTouchEnd"
-  >
+  <div class="main">
     <div class="loading" ref="loading">
       <img class="img" src="../../common/image/default.png" width="25px" height="25px" ref="loadingImg">
     </div>
@@ -12,11 +8,9 @@
         <search-box></search-box>
       </div>
     </div>
+    <img width="100%" height="auto" src="./redcard.png">
     <div class="icon-list-wrapper">
       <icon-list :data="listData"></icon-list>
-    </div>
-    <div class="red-packet">
-      <img width="100%" height="100%" src="static/meituan/red-packet.png">
     </div>
     <div class="activity">
       <div class="item">
@@ -29,9 +23,9 @@
         <p class="desc-2">
           <span style="color: #e81919">1398</span>人正在抢 >
         </p>
-        <div class="pic">
-          <img width="60%" height="100%" src="static/meituan/ac-food1.png">
-        </div>
+        <!--<div class="pic">-->
+          <!--<img width="60%" height="100%" src="./food1.png">-->
+        <!--</div>-->
       </div>
       <div class="item">
         <h2 class="name">
@@ -45,9 +39,9 @@
             立即抢购 >
           </span>
         </p>
-        <div class="pic">
-          <img width="60%" height="100%" src="static/meituan/ac-food2.png">
-        </div>
+        <!--<div class="pic">-->
+          <!--<img width="60%" height="100%" src="static/meituan/ac-food2.png">-->
+        <!--</div>-->
       </div>
     </div>
     <div class="shop-list">
@@ -55,9 +49,6 @@
         附近商家
       </h1>
       <shop-list @select="selectShop" :data="shopList" @del="del"></shop-list>
-    </div>
-    <div class="load-more">
-      <loading></loading>
     </div>
   </div>
 </template>
@@ -110,62 +101,6 @@
         shopManager.getShopList().then((res) => {
           this.shopList = res.data.poilist
         })
-      },
-      mainTouchStart(e) {
-        this.$refs.loading.style[transition] = ``
-        const leaveTop = document.documentElement.scrollTop || document.body.scrollTop
-        const touch = e.touches[0]
-        this.touch = {}
-        if (leaveTop <= 0) {
-          this.touch.initRefreshing = true
-        }
-        this.touch.startY = touch.pageY
-        this.touch.startX = touch.pageX
-        this.touch.startClientY = touch.clientY
-      },
-      mainTouchMove(e) {
-        if (this.isRefreshing) {
-          return
-        }
-        if (!this.touch.initRefreshing) {
-          return
-        }
-        const touch = e.touches[0]
-        const dealtX = Math.abs(this.touch.startX - touch.clientX)
-        const dealtY = Math.abs(this.touch.startClientY - touch.clientY)
-        // x方向偏移大于y方向 就直接返回
-        if (dealtX > dealtY) {
-          return
-        }
-        // 上拉刷新
-        if (touch.pageY > this.touch.startY) {
-          const dealt = Math.min(touch.pageY - this.touch.startY, MAX_PULL_LENGTH)
-          this.$refs.loading.style.height = `${dealt}px`
-          this.$refs.loadingImg.style.height = `${dealt / 2}px`
-          this.$refs.loadingImg.style.width = `${dealt / 2}px`
-          if (dealt < MAX_PULL_LENGTH) {
-            this.touch.percent = 2 * (1 + (touch.pageY - this.touch.startY) / MAX_PULL_LENGTH)
-          }
-        } else {
-          this.$refs.loading.style.height = 0
-        }
-      },
-      mainTouchEnd(e) {
-        const imageHeight = this.$refs.loading.clientHeight
-        this.$refs.loading.style[transition] = `all 0.5s`
-        // 拖动超过一半, 刷新
-        this.isRefreshing = true
-        if (imageHeight > LENGTH_TO_REFRESH) {
-          this.shopList = []
-          setTimeout(() => {
-            this.getShopList()
-            this.$refs.loading.style.height = 0
-            this.isRefreshing = false
-          }, 1000)
-        } else {
-          this.$refs.loading.style.height = 0
-          this.isRefreshing = false
-        }
       },
       selectShop(shop) {
         this.setShop(shop)
@@ -229,7 +164,7 @@
 </script>
 
 <style lang="stylus" scoped>
-  @import "../../common/stylus/variable.styl"
+  @import "~common/stylus/variable.styl"
 
   .loading
     position relative
@@ -242,12 +177,15 @@
       left 50%
       border-radius 50%
       transform: translate(-50%, -50%)
-
+ .main
+   height calc(100% - 3.7rem)
+   overflow scroll
+   -webkit-overflow-scrolling touch
   .header
     position relative
     height 70px
     width 100%
-    background $color-background
+    background-image: linear-gradient(90deg,#0af,#0085ff);
     .search-box-wrapper
       position absolute
       width 80%
@@ -266,7 +204,7 @@
     margin-bottom .8rem
     .item
       width 50%
-      padding 1rem 0 0 1rem
+      padding 1rem 0 1.5rem 1rem
       margin-right .3rem
       background: linear-gradient(0deg,#f4f4f4 5%,#fafafa 95%);
       .name
@@ -292,7 +230,8 @@
     .title
       font-weight 700
       text-align center
-      padding 2rem 0
+      font-size $font-size-large
+      padding 1rem 0
       &:before
         display: inline-block;
         vertical-align middle

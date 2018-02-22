@@ -1,6 +1,7 @@
 <template>
-  <ul class="shop-list">
-    <li :ref="'item'+ index"
+  <transition-group tag="ul" name="list" class="shop-list">
+    <li :key="item.id"
+        :ref="'item'+ index"
         class="item"
         v-for="(item,index) in data"
         @click="selectItem(item)"
@@ -48,7 +49,7 @@
         删除
       </div>
     </li>
-  </ul>
+  </transition-group>
 </template>
 
 <script>
@@ -184,6 +185,10 @@
       display flex
       padding 20px 10px
       border-1px($color-split-grey)
+      &.list-leave-active
+        transition: all 0.3s
+      &.list-leave-to
+        transform: translate(-100% ,0)
       .img
         position relative
         flex 0 0 7rem

@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div class="middle-modal" v-show="visible">
+    <div class="middle-modal" v-show="visible" @touchmove.prevent.stop>
       <div class="modal-mask" @click="hide">
 
       </div>

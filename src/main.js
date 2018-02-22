@@ -9,6 +9,7 @@ import fastclick from 'fastclick'
 import VueLazyload from 'vue-lazyload'
 
 import '@/common/stylus/index.styl'
+import '@/common/stylus/icon-font/iconfont.css'
 
 Vue.prototype.$http = axios
 

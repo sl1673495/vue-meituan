@@ -1,6 +1,7 @@
 <template>
   <div class="star" :class="starType">
     <span v-for="(itemClass,index) in itemClasses" :class="itemClass" class="star-item" :key="index"></span>
+    <span v-if="showNumber" class="score">{{score}}</span>
   </div>
 </template>
 
@@ -17,6 +18,10 @@
       },
       score: {
         type: Number
+      },
+      showNumber: {
+        type: Boolean,
+        default: false
       }
     },
     computed: {
@@ -93,4 +98,8 @@
           bg-image('star24_half')
         &.off
           bg-image('star24_off')
+    .score
+      color #f60
+      font-size .7rem
+      margin-left .7rem
 </style>

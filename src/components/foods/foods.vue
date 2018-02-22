@@ -42,7 +42,9 @@
       <shop-cart
         :deliveryPrice="info.shipping_fee"
         :minPrice="info.min_price"
-        :selectFoods="selectFoods"></shop-cart>
+        :selectFoods="selectFoods"
+        @pay="pay">
+      </shop-cart>
       <middle-modal
         :visible.sync="foodShow"
         width="80%">
@@ -72,7 +74,6 @@
       <middle-modal
         visible.sync="bulletinShow"
         width="70%">
-
       </middle-modal>
     </div>
   </div>
@@ -83,7 +84,7 @@
   import CartControl from '@/base/cart-control/cart-control'
   import MiddleModal from '@/base/middle-modal/middle-modal'
   import ShopCart from '@/base/shopcart/shopcart'
-
+  import {mapGetters,mapMutations} from 'vuex'
   const HEADER_HEIGHT = '12rem'
 
   export default {
@@ -115,7 +116,10 @@
           })
         })
         return res
-      }
+      },
+      ...mapGetters([
+        'shop'
+      ])
     },
     methods: {
       getFoods() {
@@ -147,6 +151,15 @@
         this.foodShow = true
         this.selectFood = food
       },
+      pay() {
+        const order = {
+          selectFoods: this.selectFoods,
+          deliveryPrice: this.info.shipping_fee,
+          shop: this.shop
+        }
+        this.setOrder(order)
+        this.$router.push('/pay')
+      },
       foodTouchStart() {
         this.$emit('foodTouchStart')
       },
@@ -162,8 +175,7 @@
       _scrollToTop(dom) {
         dom.addEventListener('scroll', e=> {
           if (dom.scrollTop <= 0) {
-            const header = document.getElementById('shopHeader')
-            header.style.height = HEADER_HEIGHT
+            this.$emit('scrollToTop')
           }
         })
       },
@@ -172,7 +184,10 @@
         const menuList = this.$refs.menuList
         this._scrollToTop(foodList)
         this._scrollToTop(menuList)
-      }
+      },
+      ...mapMutations({
+        setOrder: 'SET_ORDER'
+      })
     },
     components: {
       CartControl,
@@ -231,6 +246,7 @@
             line-height 1.7rem
             text-align center
             color $color-text-grey
+            font-size $font-size-medium
             border-left 2px solid #d9dde1;
             background $color-grey-background
           .food-item

@@ -17,23 +17,23 @@
           配送费¥{{deliveryPrice}}
         </div>
       </div>
-      <div class="pay" :class="payCls">
+      <div class="pay" :class="payCls" @click.stop="pay">
         {{payDesc}}
       </div>
 
     </div>
     <transition name="fade">
-      <div class="mask" v-show="listShow" @click="hide"></div>
+      <div class="mask" v-show="listShow" @click="hide" @touchmove.prevent.stop></div>
     </transition>
     <transition name="fold">
-      <div class="shop-list" v-show="listShow" @touchmove="move">
+      <div class="shop-list" v-show="listShow" @touchmove.stop>
         <div class="header">
           <h2 class="title">
             已选商品
           </h2>
         </div>
-        <ul class="list-wrapper">
-          <li class="item" v-for="food in selectFoods">
+        <transition-group name="list" tag="ul" class="list-wrapper">
+          <li :key="food.name" class="item" v-for="food in selectFoods">
             <div class="food">
               <div class="img">
                 <img :src="food.picture">
@@ -49,7 +49,7 @@
               <cart-control :food="food"></cart-control>
             </div>
           </li>
-        </ul>
+        </transition-group>
       </div>
     </transition>
   </div>
@@ -90,11 +90,13 @@
       hide() {
         this.listShow = false
       },
+      pay() {
+        if (this.totalPrice >= this.minPrice) {
+          this.$emit('pay')
+        }
+      },
       _calcPrice(food) {
         return oneDec(food.min_price * food.number)
-      },
-      move(e) {
-        e.stopPropagation()
       }
     },
     computed: {
@@ -124,6 +126,13 @@
           return `还差${oneDec(diff)}元`
         }
         return `去结算`
+      },
+    },
+    watch: {
+      selectFoods(newFoods) {
+        if (!newFoods.length) {
+          this.hide()
+        }
       }
     },
     components: {
@@ -237,6 +246,10 @@
         display flex
         align-items center
         border-1px($color-split-grey)
+        &.list-enter-active, &.list-leave-active
+          transition: all 0.3s
+        &.list-enter, &.list-leave-to
+          transform: translate(-100% ,0)
         .food
           padding 1rem 1.5rem
           display flex

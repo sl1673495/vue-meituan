@@ -1,6 +1,9 @@
+import {getOrderHistory} from "@/common/js/cache";
 
 const state = {
-  shop: {}
+  shop: {},
+  order: {},
+  orderHistory: getOrderHistory()
 }
 
 export default state

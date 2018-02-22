@@ -40,22 +40,30 @@
             点菜
           </span>
         </router-link>
-        <a class="tab-item">
+        <router-link :to="{name:'ratings'}" class="tab-item">
           <span class="text">
             评价
           </span>
-        </a>
+        </router-link>
         <a class="tab-item">
           <span class="text">
             商家
           </span>
         </a>
       </div>
-      <router-view
-        @foodTouchStart="foodTouchStart"
-        @foodTouchEnd="foodTouchEnd"
-        @menuTouchStart="menuTouchStart"
-        @menuTouchEnd="menuTouchEnd"/>
+      <transition name="slide">
+        <keep-alive>
+          <router-view
+            @foodTouchStart="foodTouchStart"
+            @foodTouchEnd="foodTouchEnd"
+            @menuTouchStart="menuTouchStart"
+            @menuTouchEnd="menuTouchEnd"
+            @ratingTouchStart="ratingTouchStart"
+            @ratingTouchEnd="ratingTouchEnd"
+            @scrollToTop="expendHeader"
+          />
+        </keep-alive>
+      </transition>
     </div>
   </transition>
 </template>
@@ -103,6 +111,7 @@
         }else {
           const foodList = document.getElementById('foodList')
           const menuList = document.getElementById('menuList')
+          const ratingList =document.getElementById('ratingList')
           // 滑动食品列表时
           if (this.foodTouch) {
             if (foodList.scrollTop > 0) {
@@ -115,8 +124,17 @@
               return
             }
           }
-          this.$refs.shopHeader.style.height = HEADER_HEIGHT
+          // 滑动评价列表时
+          if (this.ratingTouch) {
+            if (ratingList.scrollTop > 0) {
+              return
+            }
+          }
+          this.expendHeader()
         }
+      },
+      expendHeader() {
+        this.$refs.shopHeader.style.height = HEADER_HEIGHT
       },
       foodTouchStart() {
         this.foodTouch = true
@@ -129,6 +147,12 @@
       },
       menuTouchEnd() {
         this.menuTouch = false
+      },
+      ratingTouchStart() {
+        this.ratingTouch = true
+      },
+      ratingTouchEnd() {
+        this.ratingTouch = false
       }
     }
   }
@@ -138,16 +162,14 @@
   @import "~common/stylus/variable.styl"
   @import "~common/stylus/mixin.styl"
 
-  .slide-enter-active, .slide-leave-active
-    transition: all 0.3s
-
-  .slide-enter, .slide-leave-to
-    transform: translate3d(100%, 0, 0)
-
   .shop-detail
     height 100%
     background #fff
     overflow-y hidden
+    &.slide-enter-active, &.slide-leave-active
+      transition: all 0.3s
+    &.slide-enter, &.slide-leave-to
+      transform: translate3d(100%, 0, 0)
     .header
       position relative
       width 100%
