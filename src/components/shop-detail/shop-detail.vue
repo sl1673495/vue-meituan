@@ -34,7 +34,7 @@
           <i class="icon-back"></i>
         </div>
       </div>
-      <div class="tab-bar">
+      <div class="tab-bar" ref="tabBar">
         <router-link :to="{name:'foods'}" class="tab-item">
           <span class="text">
             点菜
@@ -103,35 +103,35 @@
         this.touch.startY = touches.clientY
       },
       shopTouchMove(e) {
-        const foods = document.getElementById('foods')
-        const touches =e.touches[0]
-        let diffY = this.touch.startY - touches.clientY
-        if (diffY > 0) {
-          this.$refs.shopHeader.style.height = 0
-        }else {
-          const foodList = document.getElementById('foodList')
-          const menuList = document.getElementById('menuList')
-          const ratingList =document.getElementById('ratingList')
-          // 滑动食品列表时
-          if (this.foodTouch) {
-            if (foodList.scrollTop > 0) {
-              return
-            }
-          }
-          // 滑动菜单列表时
-          if (this.menuTouch) {
-            if (menuList.scrollTop > 0) {
-              return
-            }
-          }
-          // 滑动评价列表时
-          if (this.ratingTouch) {
-            if (ratingList.scrollTop > 0) {
-              return
-            }
-          }
-          this.expendHeader()
-        }
+//        const foods = document.getElementById('foods')
+//        const touches =e.touches[0]
+//        let diffY = this.touch.startY - touches.clientY
+//        if (diffY > 0) {
+//          this.$refs.shopHeader.style.height = 0
+//        }else {
+//          const foodList = document.getElementById('foodList')
+//          const menuList = document.getElementById('menuList')
+//          const ratingList =document.getElementById('ratingList')
+//          // 滑动食品列表时
+//          if (this.foodTouch) {
+//            if (foodList.scrollTop > 0) {
+//              return
+//            }
+//          }
+//          // 滑动菜单列表时
+//          if (this.menuTouch) {
+//            if (menuList.scrollTop > 0) {
+//              return
+//            }
+//          }
+//          // 滑动评价列表时
+//          if (this.ratingTouch) {
+//            if (ratingList.scrollTop > 0) {
+//              return
+//            }
+//          }
+//          this.expendHeader()
+//        }
       },
       expendHeader() {
         this.$refs.shopHeader.style.height = HEADER_HEIGHT
