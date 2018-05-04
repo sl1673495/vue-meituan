@@ -1,8 +1,9 @@
 import axios from 'axios'
+import {path} from "common/js/config"
 
 export function getFoods() {
   return axios({
-    url: '/static/json/foods.json',
+    url: path + '/static/json/foods.json',
     method: 'get'
   })
 }

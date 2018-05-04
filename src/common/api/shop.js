@@ -1,4 +1,5 @@
 import axios from 'axios'
+import {path} from "common/js/config"
 
 // axios.interceptors.request.use(config => {
 //   // element ui Loading方法
@@ -27,7 +28,7 @@ import axios from 'axios'
 export default {
   getShopList() {
     return axios({
-      url: '/static/json/shops.json',
+      url: path +  '/static/json/shops.json',
       method: 'get'
     })
   }

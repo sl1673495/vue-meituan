@@ -62,6 +62,7 @@
   import {prefixStyle} from '@/common/js/dom'
   import {mapMutations} from 'vuex'
   import shopManager from '@/common/api/shop'
+  import {path} from "common/js/config"
 
   const MAX_PULL_LENGTH = 100
   const LENGTH_TO_REFRESH = 50
@@ -90,7 +91,7 @@
           setTimeout(() => {
             this.$http({
               method: 'get',
-              url: '/static/json/shops2.json'
+              url: path + '/static/json/shops2.json'
             }).then((res) => {
               this.shopList = this.shopList.concat(res.data.poilist)
             })

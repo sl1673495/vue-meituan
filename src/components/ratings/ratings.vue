@@ -44,7 +44,7 @@
     <ul class="rating-content">
       <li :key="item.user_id" class="rating-item" v-for="item in comments">
         <div class="avatar">
-          <img width="100%" :src="item.user_pic_url ? item.user_pic_url : '/static/meituan/default-avatar.png'"/>
+          <img width="100%" :src="item.user_pic_url ? item.user_pic_url : path + '/static/meituan/default-avatar.png'"/>
         </div>
         <div class="content">
           <div class="name">
@@ -84,10 +84,12 @@
   import {getRatings} from '@/common/api/rating'
   import {getDateStr} from '@/common/js/util'
   import Loading from '@/base/loading/loading'
+  import {path} from "common/js/config"
 
   export default {
     created() {
       this.getRatings(this.currentPage)
+      this.path = path
     },
     mounted() {
       this._listEvent()
