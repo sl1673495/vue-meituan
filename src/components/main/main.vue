@@ -112,9 +112,7 @@
       ...mapMutations({
         setShop: 'SET_SHOP'
       })
-
     },
-
     data() {
       return {
         listData: [
@@ -168,7 +166,8 @@
 
   .loading
     position relative
-    height 0
+    height 100px
+    margin-top -100px
     background black
     overflow: hidden
     .img
