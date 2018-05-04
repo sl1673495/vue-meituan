@@ -203,7 +203,7 @@
 
   .foods
     position relative
-    height calc(100% - 5.2rem)
+    height calc(100% - 14.5rem - 3.7rem)
     .food-wrapper
       display flex
       width 100%
