@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><title>meituan</title><script>!function () {
+        const oHtml = document.getElementsByTagName("html")[0]
+        const width = oHtml.clientWidth
+        if (width < 1000){
+          oHtml.style.fontSize = 11 * (width / 320) + "px";
+        }
+      }()</script><link href=static/css/app.646c90151c6771d798acde32abe435b0.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=static/js/manifest.37a2ecbb1d1b7e6c9ada.js></script><script type=text/javascript src=static/js/vendor.15166e627ebd4681054f.js></script><script type=text/javascript src=static/js/app.221b84cf0cb65531317d.js></script></body><script>window.onload=function () {
+      document.addEventListener('touchstart',function (event) {
+        if(event.touches.length>1){
+          event.preventDefault();
+        }
+      })
+      let lastTouchEnd=0;
+      document.addEventListener('touchend',function (event) {
+        const now=(new Date()).getTime();
+        if(now-lastTouchEnd<=300){
+          event.preventDefault();
+        }
+        lastTouchEnd=now;
+      },false)
+    }</script></html>
