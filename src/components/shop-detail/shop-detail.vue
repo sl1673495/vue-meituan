@@ -10,7 +10,7 @@
         <div class="avatar">
           <img :src="shop.pic_url" width="100%" height="100%">
         </div>
-        <div class="content-wrapper">
+        <div class="content-wrapper"  v-if="data.poi_info">
           <div class="content">
             <h1 class="title">
               <span class="icon" v-show="shop.poi_type_icon">

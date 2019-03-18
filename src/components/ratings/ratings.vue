@@ -41,7 +41,7 @@
         </div>
       </div>
     </div>
-    <ul class="rating-content">
+    <ul class="rating-content" v-if="comments.length">
       <li :key="item.user_id" class="rating-item" v-for="item in comments">
         <div class="avatar">
           <img width="100%" :src="item.user_pic_url ? item.user_pic_url : path + '/static/meituan/default-avatar.png'"/>
