@@ -52,3 +52,13 @@ export function prefixStyle(style) {
 
   return vendor + style.charAt(0).toUpperCase() + style.substr(1)
 }
+
+export function getStyle(el) {
+  const styles = getComputedStyle(el)
+  const replacePx = val => val.replace('px', '')
+  const handleAttr = val => Number(replacePx(val))
+  return {
+    height: handleAttr(styles.height),
+    width: handleAttr(styles.width)
+  }
+}
