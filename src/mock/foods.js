@@ -1,4 +1,4 @@
-{
+export default {
   "data": {
     "container_template": {
       "code": 0,

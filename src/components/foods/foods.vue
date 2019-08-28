@@ -16,7 +16,6 @@
         >
           <ul
             class="menu"
-            id="js-foods-menu"
             ref="menu"
           >
             <li
@@ -254,6 +253,7 @@ export default {
 
     .scroller-wrap {
       height: calc(100vh - 3.7rem);
+      overflow: hidden;
 
       &.fixed {
         width: 7rem;

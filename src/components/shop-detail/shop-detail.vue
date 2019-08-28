@@ -101,7 +101,6 @@ export default {
   mounted() {
     this.handleFix([
       this.$refs.tabBar,
-      document.getElementById("js-foods-menu"),
       document.getElementById("js-scroller-wrap")
     ])
   },

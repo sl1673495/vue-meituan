@@ -77,30 +77,7 @@ export default {
     this.acFood1 = acFood1
     this.getShopList()
   },
-  mounted() {
-    window.addEventListener("scroll", this.scroll)
-  },
   methods: {
-    scroll(e) {
-      // 下拉加载更多
-      const currentHeight = window.innerHeight
-      const leaveTop =
-        document.documentElement.scrollTop || document.body.scrollTop
-      if (leaveTop === 0) {
-        e.preventDefault()
-      }
-      const bodyHeight = document.getElementsByTagName("body")[0].clientHeight
-      if (currentHeight + leaveTop === bodyHeight) {
-        setTimeout(() => {
-          this.$http({
-            method: "get",
-            url: path + "/static/json/shops2.json"
-          }).then(res => {
-            this.shopList = this.shopList.concat(res.data.poilist)
-          })
-        }, 1000)
-      }
-    },
     getShopList() {
       shopManager.getShopList().then(res => {
         this.shopList = res.data.poilist
