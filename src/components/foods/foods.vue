@@ -8,30 +8,39 @@
       ref="foodWrapper"
     >
       <div class="menu-placeholder">
-        <ul
-          class="menu"
-          id="js-foods-menu"
+        <scroller
+          :options="{click: true}"
+          class="scroller-wrap"
+          id="js-scroller-wrap"
+          ref="scroller"
         >
-          <li
-            :class="{'active': index === activeIndex}"
-            :key="index"
-            @click="selectMenu(index)"
-            class="type"
-            v-for="(food,index) in foods"
+          <ul
+            class="menu"
+            id="js-foods-menu"
+            ref="menu"
           >
-            <img
-              :src="food.icon"
-              height="15px"
-              v-if="food.icon"
-              width="15px"
-            />
-            {{food.name}}
-            <span
-              class="badge"
-              v-if="getBoughtNumber(index)"
-            >{{getBoughtNumber(index)}}</span>
-          </li>
-        </ul>
+            <li
+              :class="{'active': index === activeMenuIndex}"
+              :key="index"
+              @click="selectMenu(index)"
+              class="type"
+              ref="menuItems"
+              v-for="(food,index) in foods"
+            >
+              <img
+                :src="food.icon"
+                height="15px"
+                v-if="food.icon"
+                width="15px"
+              />
+              {{food.name}}
+              <span
+                class="badge"
+                v-if="getBoughtNumber(index)"
+              >{{getBoughtNumber(index)}}</span>
+            </li>
+          </ul>
+        </scroller>
       </div>
       <ul
         class="food-list"
@@ -43,7 +52,10 @@
           class="one-type"
           v-for="(food, index) in foods"
         >
-          <h2 class="title">{{food.name}}</h2>
+          <h2
+            class="title"
+            ref="foodTypeItems"
+          >{{food.name}}</h2>
           <ul>
             <li
               :key="index"
@@ -65,7 +77,10 @@
                   {{spu.min_price}}
                 </div>
                 <div class="control">
-                  <cart-control :food="spu"></cart-control>
+                  <cart-control
+                    :food="spu"
+                    :target="cartIcon"
+                  ></cart-control>
                 </div>
               </div>
             </li>
@@ -111,21 +126,28 @@
 
 <script>
 import { getFoods } from "@/common/api/food"
+import { getStyle } from "@/common/js/dom"
 import CartControl from "@/base/cart-control/cart-control"
 import MiddleModal from "@/base/middle-modal/middle-modal"
 import ShopCart from "@/base/shopcart/shopcart"
+import Scroller from "@/base/scroller/scroller"
 import { mapGetters, mapMutations } from "vuex"
-const HEADER_HEIGHT = "12rem"
 
+const HEADER_HEIGHT = "12rem"
 export default {
   created() {
     this.getFoods()
+    // 美食种类dom节点的数组
+    this.foodTypeElements = []
+  },
+  mounted() {
+    this.cartIcon = document.getElementById("js-cart-icon")
   },
   data() {
     return {
       info: {},
       foods: [],
-      activeIndex: 0,
+      activeMenuIndex: 0,
       refreshTag: true,
       foodShow: false,
       selectFood: {}
@@ -150,8 +172,34 @@ export default {
       getFoods().then(res => {
         this.info = res.data.data.poi_info
         this.foods = res.data.data.food_spu_tags
-        console.log("this.foods: ", this.foods)
+        this.$nextTick(() => {
+          this.initScroller()
+          this.recordMenuItemScrollTop()
+        })
       })
+    },
+    initScroller() {
+      const { menuItems, menu, scroller } = this.$refs
+      const totalHeight = menuItems.reduce((total, current) => {
+        return total + getStyle(current).height
+      }, 0)
+      menu.style.height = `${totalHeight}px`
+      scroller.refresh()
+    },
+    recordMenuItemScrollTop() {
+      this.foodTypeElement = []
+      const { foodTypeItems, menu, scroller } = this.$refs
+      foodTypeItems.forEach(foodTypeItem => {
+        this.foodTypeElements.push(foodTypeItem)
+        const { offsetTop } = foodTypeItem
+      })
+    },
+    selectMenu(index) {
+      this.foodTypeElements[index].scrollIntoView({
+        block: "center",
+        behavior: "smooth"
+      })
+      this.activeMenuIndex = index
     },
     getBoughtNumber(index) {
       let total = 0
@@ -180,7 +228,8 @@ export default {
   components: {
     CartControl,
     MiddleModal,
-    ShopCart
+    ShopCart,
+    Scroller
   }
 }
 </script>
@@ -200,23 +249,34 @@ export default {
       flex: 0 0 7rem;
       width: 7rem;
       flex-shrink: 0;
+      background: $color-grey-background;
+      min-height: 100vh;
+    }
+
+    .scroller-wrap {
+      height: calc(100vh - 3.7rem);
+
+      .menu {
+        padding-bottom: 14.5rem;
+      }
+
+      &.fixed {
+        position: fixed;
+        top: 2.5rem;
+      }
     }
 
     .menu {
       width: 7rem;
       flex: 0 0 7rem;
       flex-shrink: 0;
-      min-height: 100vh;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-      background: $color-grey-background;
       padding-bottom: 3.7rem;
+      background: $color-grey-background;
 
       &.fixed {
         position: fixed;
         left: 0;
         top: 2.5rem;
-        bottom: 0;
         z-index: 1;
       }
 
@@ -254,6 +314,7 @@ export default {
     .food-list {
       flex: 1;
       overflow: hidden;
+      padding-bottom: 3.7rem;
 
       .one-type {
         .title {
@@ -267,8 +328,8 @@ export default {
         }
 
         .food-item {
-          margin: 1rem;
-          padding-bottom: 1rem;
+          height: 5rem;
+          padding: 1rem;
           display: flex;
           border-1px($color-split-grey);
 

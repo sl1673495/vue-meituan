@@ -1,7 +1,7 @@
-import {getOrderHistory} from "@/common/js/cache";
+import {getOrderHistory, getShop} from "@/common/js/cache";
 
 const state = {
-  shop: {},
+  shop: getShop(),
   order: {},
   orderHistory: getOrderHistory()
 }

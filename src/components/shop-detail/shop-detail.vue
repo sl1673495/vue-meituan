@@ -2,6 +2,7 @@
   <transition name="slide">
     <div
       class="shop-detail"
+      id="js-shop-detail-scroller"
       ref="scroller"
     >
       <div
@@ -100,7 +101,8 @@ export default {
   mounted() {
     this.handleFix([
       this.$refs.tabBar,
-      document.getElementById("js-foods-menu")
+      document.getElementById("js-foods-menu"),
+      document.getElementById("js-scroller-wrap")
     ])
   },
   data() {

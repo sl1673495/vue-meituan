@@ -61,7 +61,7 @@ import IconList from "@/base/icon-list/icon-list"
 import ShopList from "@/base/shop-list/shop-list"
 import Split from "@/base/split/split"
 import Loading from "@/base/loading/loading"
-import { prefixStyle } from "@/common/js/dom"
+import { saveShop } from "@/common/js/cache"
 import { mapMutations } from "vuex"
 import shopManager from "@/common/api/shop"
 import { path } from "common/js/config"
@@ -71,8 +71,6 @@ const MAX_PULL_LENGTH = 100
 const LENGTH_TO_REFRESH = 50
 const MIN_HEADER_HEIGHT = 50
 const ORIGIN_HEDEAR_HEIGHT = 70
-const transform = prefixStyle("transform")
-const transition = prefixStyle("transition")
 
 export default {
   created() {
@@ -110,6 +108,7 @@ export default {
     },
     selectShop(shop) {
       this.setShop(shop)
+      saveShop(shop)
       this.$router.push("/detail/88")
     },
     del(index) {
