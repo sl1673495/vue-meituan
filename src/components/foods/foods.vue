@@ -246,7 +246,6 @@ export default {
     width: 100%;
 
     .menu-placeholder {
-      flex: 0 0 7rem;
       width: 7rem;
       flex-shrink: 0;
       background: $color-grey-background;
@@ -256,13 +255,21 @@ export default {
     .scroller-wrap {
       height: calc(100vh - 3.7rem);
 
-      .menu {
-        padding-bottom: 14.5rem;
+      &.fixed {
+        width: 7rem;
+        top: 2.5rem;
+        bottom: 0;
+        position: fixed;
+        z-index: 1;
       }
 
-      &.fixed {
-        position: fixed;
-        top: 2.5rem;
+      .menu {
+        padding-bottom: 14.5rem;
+
+        &.fixed {
+          position: fixed;
+          z-index: 1;
+        }
       }
     }
 
@@ -277,7 +284,8 @@ export default {
         position: fixed;
         left: 0;
         top: 2.5rem;
-        z-index: 1;
+        bottom: 0;
+        z-index: 2;
       }
 
       .type {
